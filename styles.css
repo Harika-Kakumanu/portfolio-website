@@ -1,0 +1,58 @@
+   body {
+      background-color: black;
+      color: white;
+      background-image: "https://ib.cricket/assets/images/iBC_logo_60.jpg";
+
+   }
+
+   h1 {
+      background-color: #808080;
+      color: springgreen;
+   }
+
+   h2 {
+      color: springgreen;
+      margin: 20px;
+      padding: 20px;
+   }
+
+   h3 {
+      color: springgreen;
+      border: 4px solid blue;
+   }
+
+   #skills {
+      color: springgreen;
+   }
+
+   div {
+      width: 600px;
+      height: 200px;
+      border: 4px solid pink;
+      background-color: white;
+   }
+
+   #div1 {
+      font-size: 15px;
+      color: springgreen;
+      background-color: red;
+
+   }
+
+   #span1 {
+      background-color: pink;
+      font-size: 15px;
+   }
+
+   .unlist {
+      font-size: 15px;
+
+      border: 4px solid pink;
+   }
+
+   img {
+      height: 130px;
+      width: 150px;
+      background-color: black;
+   }
+   
