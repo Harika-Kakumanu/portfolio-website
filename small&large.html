@@ -13,7 +13,7 @@
     </head>
     <style>
         .h {
-            height: 50px;
+            height: 100px;
         }
 
         .o {
@@ -35,12 +35,34 @@
 
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-6 order-3 col-md-4 order-md-4 col-xl-3 order-xl-1 h v"></div>
+            <div class="row d-sm-flex d-md-none d-xl-none">
+                <div class="col-6 h o"></div>
+                <div class="col-6 h g"></div>
+            </div>
+            <div class="row d-sm-flex d-md-none d-xl-none">
+                <div class="col-6 h v"></div>
+                <div class="col-6 h b"></div>
+            </div>
+            <div class="row d-none d-xl-none d-md-flex">
+                <div class="col-4 h b"></div>
+                <div class="col-4 h g"></div>
+                <div class="col-4 h o"></div>
+            </div>
+            <div class="row d-none d-xl-none d-md-flex">
+                <div class="col-4 h v">
+                </div>
+            </div>
+            <div class="row d-none d-xl-flex">
+                <div class="col-3 h v"></div>
+                <div class="col-3 h b"></div>
+                <div class="col-3 h g"></div>
+                <div class="col-3 h o"></div>
+            </div>
+            <!-- <div class="col-6 order-3 col-md-4 order-md-4 col-xl-3 order-xl-1 h v"></div>
                 <div class="col-6 order-4 col-md-4 order-md-1 col-xl-3 order-xl-2 h b"></div>
                 <div class="col-6 order-2 col-md-4 order-md-2 col-xl-3 order-xl-3 h g"></div>
-                <div class="col-6 order-1 col-md-3 order-md-3 col-xl-3 order-xl-4 h o"></div>
-            </div>
+                <div class="col-6 order-1 col-md-3 order-md-3 col-xl-3 order-xl-4 h o"></div>-->
+        </div>
         </div>
     </body>
 
