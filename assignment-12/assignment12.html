@@ -17,7 +17,8 @@
       .b {
         margin-top: 10px;
 
-        border-bottom: 2px solid grey;
+        border-bottom: 2px solid lightgrey;
+        background-color: lightgrey;
       }
 
       .img1 {
@@ -27,112 +28,255 @@
       }
 
       h2,
-      p {
+      .p {
         text-align: center;
+      }
+
+      .pp {
+        margin-left: 260px;
+      }
+
+      .sp {
+        padding-bottom: 100px;
+      }
+
+      .m {
+        margin-top: 80px;
+        padding-left: 30px;
       }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <div class="row d-sm-flex b">
+      <!-- for mobile-->
+      <div class="row d-sm-flex d-md-none d-xl-none b">
         <div class="col-6">
-          <div class="row d-sm-flex">
-            <div class="col-1">
-              <img class="img" src="assets/logo-gmail.png">
-            </div>
-            <div class="col-1">
-              <h5>Gmail</h5>
-            </div>
-          </div>
+          <p>
+            <img class="img" src="assets/logo-gmail.png">Gmail
+          </p>
         </div>
-        <div class="col-6">
+        <div class="col-2"></div>
+        <div class="col-4">
           <button type="button" class="btn btn-primary">Get Gmail</button>
         </div>
       </div>
+      <div class="row b d-sm-flex d-md-none d-xl-none">
+        <div class="col-3">For Work </div>
+        <div class="col-6"></div>
+        <div class="col-3"> Sign in</div>
+      </div>
 
-      <div class="row d-sm-flex b">
-        <div class="col-6">
-          For Work
+      <!-- for tablet-->
+
+      <div class="row d-sm-none d-md-flex d-xl-flex b">
+        <div class="col-7">
+          <p>
+            <img class="img" src="assets/logo-gmail.png">Gmail
+          </p>
         </div>
-        <div class="col-6">
-          Sign in
+        <div class="col-2">For Work </div>
+        <div class="col-1"> Sign in</div>
+        <div class="col-2">
+          <button type="button" class="btn btn-primary">Create an account</button>
         </div>
       </div>
 
-      <div class="row d-sm-flex">
-        <div class="col-sm-12">
+
+      <!--for mobile-->
+
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-12">
+          <h2>
+            Get more done with gmail
+          </h2>
+          <p class="p">Now,more secure and smarter and easier to use-helping you to save time and do more with your inbox.</p>
+          <img class="img1" src="assets/landing-page-image-mobile.png" height=300px,width=300px>
+        </div>
+      </div>
+
+      <!--for tablet-->
+
+      <div class="row d-sm-none d-md-flex d-xl-flex sp">
+        <div class="col-6 m">
+          <h2>
+            Get more done with gmail
+          </h2>
+          <p class="p">Now,more secure and smarter and easier to use-helping you to save time and do more with your inbox.</p>
+          <button type="button" class="btn btn-primary">Create an account</button>
+        </div>
+        <div class="col-6">
+          <img class="img1" src="assets/landing-page-image-desktop.png" height=300px,width=300px>
+        </div>
+      </div>
+
+      <!--for mobile&tab -->
+
+      <div class="row d-sm-flex d-md-flex d-xl-flex">
+        <div class="col-12">
           <h2>
             Experience Gmail on any device
           </h2>
+          <p class="p">The ease and simplicity of Gmail,where you are.</p>
         </div>
+      </div>
+      <div class="row d-sm-flex d-md-flex d-xl-flex pp">
+        <img src="assets/google-playstore.png" height=50px,width=50px>
+        <img src="assets/app-store.png" height=50px,width=50px>
+      </div>
+      <div class="row d-sm-flex d-md-flex d-xl-flex ">
         <div class="col-sm-12">
-          <p>The ease and simplicity of Gmail,where you are.</p>
+          <img class="img1" src="assets/experience-image-mobile-desktop.png" height=200px,width=200px>
         </div>
+      </div>
+
+
+      <!--for mobile-->
+
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-12 ">
+          <h2>Stay Organised instantly</h2>
+          <p class="p">
+            see what's new at a glance and decide what you want to read and response
+          </p>
+          <img class="img1" src="assets/stay-organised-instantly-mobile.png" height=200px,width=200px>
+        </div>
+      </div>
+
+      <div class="row d-sm-flex d-md-none d-xl-none">
         <div class="col-sm-12">
-          <img class="img1" src="assets/google-playstore.png" height=30px,width=30px>
-          <img class="img1" src="assets/app-store.png" height=30px,width=30px>
+          <h2>Never Drop the ball</h2>
+          <p class="p">
+            Get nudges that remind to follow up and respond to messages.So that nothing slips through crack.
+          </p>
+
+          <img class="img1" src="assets/never-drop-the-ball-mobile.png" height=200px,width=200px>
+
         </div>
-        <div class="row d-sm-flex">
-          <div class="col-sm-12">
-            <img class="img1" src="assets/experience-image-mobile-desktop.png" height=200px,width=200px>
-          </div>
-        </div>
-        <div class="row d-sm-flex">
-          <div class="col-sm-12">
-            <h2>Stay Organised instantly</h2>
-          </div>
-          <div class="col-sm-12">
-            <p>
-              see what's new at a glance and decide what you want to read and response
-            </p>
-          </div>
-          <div class="col-sm-12">
-            <img class="img1" src="assets/stay-organised-instantly-mobile.png" height=200px,width=200px>
-          </div>
+      </div>
+
+      <!-- for tablet-->
+
+      <div class="row d-sm-none d-md-flex d-xl-flex sp">
+
+        <div class=" col-md-6 ">
+          <h2>Stay Organised instantly</h2>
+
+          <p class="p">
+            see what's new at a glance and decide what you want to read and response
+          </p>
+
+
+          <img class="img1" src="assets/stay-organised-instantly-desktop.png" height=100px,width=100px>
         </div>
 
-        <div class="row d-sm-flex">
-          <div class="col-sm-12">
-            <h2>Never Drop the ball</h2>
-          </div>
-          <div class="col-sm-12">
-            <p>
-              Get nudges that remind to follow up and respond to messages.So that nothing slips through crack.
-            </p>
-          </div>
-          <div class="col-sm-12">
-            <img class="img1" src="assets/never-drop-the-ball-mobile.png" height=200px,width=200px>
-          </div>
-        </div>
+        <div class="col-md-6">
+          <h2>Never Drop the ball</h2>
+          <p class="p">
+            Get nudges that remind to follow up and respond to messages.So that nothing slips through crack.
+          </p>
 
-        <div class="row d-sm-flex">
-          <div class="col-sm-12">
-            <h2>Take action right from the inbox</h2>
-          </div>
-          <div class="col-sm-12">
-            <p>
-              View attachments.Rsvp to events snooze messages and more without opening any gmails.
-            </p>
-          </div>
-          <div class="col-sm-12">
-            <img class="img1" src="assets/take-action-mobile.png" height=200px,width=200px>
-          </div>
-        </div>
+          <img class="img1" src="assets/never-drop-the-ball-desktop.png" height=100px,width=100px>
 
-        <div class="row d-sm-flex ">
-          <div class="col-sm-12">
-            <h2>Avoid suspicious emails</h2>
-          </div>
-          <div class="col-sm-12">
-            <p>
-              Gmails blocks 99.9% of dangerous emails blocks before they reach you. if we think something seems phishcde fg -y,you will get a warning.
-            </p>
-          </div>
-          <div class="col-sm-12">
-            <img class="img1" src="assets/avoid-suspicious-emails-mobile.png" height=200px,width=200px>
-          </div>
         </div>
+      </div>
+
+      <!--for mobile-->
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-12">
+          <h2>Take action right from the inbox</h2>
+
+          <p class="p">
+            View attachments.Rsvp to events snooze messages and more without opening any gmails.
+          </p>
+          <img class="img1" src="assets/take-action-desktop.png" height=200px,width=200px>
+        </div>
+      </div>
+
+      <!--for tablet-->
+
+      <div class="row d-sm-none d-md-flex d-xl-flex sp">
+        <div class="col-md-6">
+          <h2>Take action right from the inbox</h2>
+
+          <p class="p">
+            View attachments.Rsvp to events snooze messages and more without opening any gmails.
+          </p>
+        </div>
+        <div class="col-6">
+          <img class="img1" src="assets/take-action-desktop.png" height=100px,width=100px>
+        </div>
+      </div>
+
+      <!--for mobile-->
+
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-sm-12">
+          <h2>Avoid suspicious emails</h2>
+
+          <p class="p">
+            Gmails blocks 99.9% of dangerous emails blocks before they reach you. if we think something seems phishcde fg -y,you will get a warning.
+          </p>
+          <img class="img1" src="assets/avoid-suspicious-emails-mobile.png" height=200px,width=200px>
+        </div>
+      </div>
+
+      <!--for tablet-->
+
+      <div class="row d-sm-none d-md-flex d-xl-flex sp">
+        <div class="col-6">
+          <img class="img1" src="assets/avoid-suspicious-emails-desktop.png" height=150px,width=150px>
+        </div>
+        <div class="col-6">
+          <h2>Avoid suspicious emails</h2>
+          <p class="p">
+            Gmails blocks 99.9% of dangerous emails blocks before they reach you. if we think something seems phishcde fg -y,you will get a warning.
+          </p>
+        </div>
+      </div>
+
+      <!--for mobile-->
+
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-12">
+          <h3>Google</h3>
+        </div>
+      </div>
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-2">privacy</div>
+        <div class="col-2">Terms</div>
+        <div class="col-4">About Google</div>
+        <div class="col-4">Google products</div>
+      </div>
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-2">our policy</div>
+      </div>
+
+      <div class="row d-sm-flex d-md-none d-xl-none">
+        <div class="col-1">
+          <img src="assets/question-mark.png">
+        </div>
+        <div class="col-2">Help</div>
+        <div class="col-3">English(India)</div>
+      </div>
+
+      <!--for tablet-->
+      <div class="row d-sm-none d-md-flex d-xl-flex sp">
+        <div class="col-12">
+          <h3>Google</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">privacy</div>
+        <div class="col-1">Terms</div>
+        <div class="col-1">About Google</div>
+        <div class="col-1">Google products</div>
+        <div class="col-1">our policy</div>
+        <div class="col-1">
+          <img src="assets/question-mark.png">
+        </div>
+        <div class="col-1">Help</div>
+        <div class="col-1">English(India)</div>
       </div>
     </div>
   </body>
