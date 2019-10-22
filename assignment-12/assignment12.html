@@ -14,11 +14,14 @@
         width: 25px;
       }
 
+      .color {
+        background-color: whitesmoke;
+      }
+
       .b {
         margin-top: 10px;
 
         border-bottom: 2px solid lightgrey;
-        background-color: lightgrey;
       }
 
       .img1 {
@@ -33,16 +36,24 @@
       }
 
       .pp {
-        margin-left: 260px;
+        margin-left: 70px;
       }
 
       .sp {
-        padding-bottom: 100px;
+        margin-bottom: 50px;
       }
 
       .m {
         margin-top: 80px;
         padding-left: 30px;
+      }
+
+      img {
+        object-fit: contain;
+      }
+
+      .lsp {
+        padding-left: 140px;
       }
     </style>
   </head>
@@ -62,7 +73,7 @@
           <button type="button" class="btn btn-primary">Get Gmail</button>
         </div>
       </div>
-      <div class="row d-flex d-md-none b">
+      <div class="row d-flex d-md-none b ">
         <div class="col-3">For Work </div>
         <div class="col-6"></div>
         <div class="col-3"> Sign in</div>
@@ -72,7 +83,7 @@
 
       <!-- for tablet-->
 
-      <!--  <div class="row d-none d-md-flex  b">
+      <div class="row d-none d-md-flex  b">
         <div class="col-7">
           <p>
             <img class="img" src="assets/logo-gmail.png">Gmail
@@ -83,18 +94,24 @@
         <div class="col-2">
           <button type="button" class="btn btn-primary">Create an account</button>
         </div>
-      </div>-->
+      </div>
 
 
       <!--for mobile-->
 
-      <div class="row d-flex d-md-none ">
+      <div class="row d-flex d-md-none sp">
         <div class="col-12">
           <h2>
             Get more done with gmail
           </h2>
           <p class="p">Now,more secure and smarter and easier to use-helping you to save time and do more with your inbox.</p>
           <img class="img1" src="assets/landing-page-image-mobile.png" height=300px,width=300px>
+
+          <center>
+
+            <button type="button" class="btn btn-primary">Get Gmail</button>
+
+          </center>
         </div>
       </div>
 
@@ -106,16 +123,17 @@
             Get more done with gmail
           </h2>
           <p class="p">Now,more secure and smarter and easier to use-helping you to save time and do more with your inbox.</p>
-          <button type="button" class="btn btn-primary">Create an account</button>
+          <center><button type="button" class="btn btn-primary">Create an account</button></center>
         </div>
         <div class="col-6">
           <img class="img1" src="assets/landing-page-image-desktop.png" height=300px,width=300px>
         </div>
+
       </div>
 
-      <!--for mobile&tab -->
+      <!--for mobile -->
 
-      <div class="row d-flex d-md-flex d-xl-flex">
+      <div class="row d-flex d-md-none sp">
         <div class="col-12">
           <h2>
             Experience Gmail on any device
@@ -123,20 +141,45 @@
           <p class="p">The ease and simplicity of Gmail,where you are.</p>
         </div>
       </div>
-      <div class="row d-flex d-md-flex d-xl-flex pp">
-        <img src="assets/google-playstore.png" height=50px,width=50px>
-        <img src="assets/app-store.png" height=50px,width=50px>
+      <div class="row d-flex d-md-none  sp pp">
+        <div class="col-6"> <img src="assets/google-playstore.png" height=40px,width=40px></div>
+        <div class="col-6 "> <img src="assets/app-store.png" height=40px,width=40px></div>
       </div>
-      <div class="row d-flex d-md-flex d-xl-flex ">
+      <div class="row d-flex d-md-none">
         <div class="col-12">
-          <img class="img1" src="assets/experience-image-mobile-desktop.png" height=200px,width=200px>
+          <img class="img1 sp" src="assets/experience-image-mobile-desktop.png" height=150px,width=150px>
+        </div>
+      </div>
+
+      <!--for tablet-->
+
+      <div class="row d-none d-md-flex ">
+        <div class="col-12">
+          <h2>
+            Experience Gmail on any device
+          </h2>
+          <p class="p">The ease and simplicity of Gmail,where you are.</p>
+        </div>
+      </div>
+
+
+      <div class="row d-none d-md-flex pp sp">
+
+        <div class="col-6 lsp"> <img src="assets/google-playstore.png" height=50px,width=50px></div>
+        <div class="col-6"> <img src="assets/app-store.png" height=50px,width=50px></div>
+
+      </div>
+
+      <div class="row d-none d-md-flex ">
+        <div class="col-12">
+          <img class="img1 sp" src="assets/experience-image-mobile-desktop.png" height=250px,width=250px>
         </div>
       </div>
 
 
       <!--for mobile-->
 
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none sp color">
         <div class="col-12 ">
           <h2>Stay Organised instantly</h2>
           <p class="p">
@@ -146,7 +189,7 @@
         </div>
       </div>
 
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none sp color ">
         <div class="col-sm-12">
           <h2>Never Drop the ball</h2>
           <p class="p">
@@ -162,18 +205,18 @@
 
       <div class="row d-none d-md-flex d-xl-flex sp">
 
-        <div class=" col-md-6 ">
+        <div class=" col-md-6 color">
           <h2>Stay Organised instantly</h2>
 
-          <p class="p">
-            see what's new at a glance and decide what you want to read and response
+          <p>
+            See what's new at a glance and decide what you want to read and response
           </p>
 
 
           <img class="img1" src="assets/stay-organised-instantly-desktop.png" height=100px,width=100px>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 color">
           <h2>Never Drop the ball</h2>
           <p class="p">
             Get nudges that remind to follow up and respond to messages.So that nothing slips through crack.
@@ -185,14 +228,14 @@
       </div>
 
       <!--for mobile-->
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none sp">
         <div class="col-12">
           <h2>Take action right from the inbox</h2>
 
           <p class="p">
             View attachments.Rsvp to events snooze messages and more without opening any gmails.
           </p>
-          <img class="img1" src="assets/take-action-desktop.png" height=200px,width=200px>
+          <img class="img1" src="assets/take-action-mobile.png" height=200px,width=200px>
         </div>
       </div>
 
@@ -213,7 +256,7 @@
 
       <!--for mobile-->
 
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none sp color">
         <div class="col-sm-12">
           <h2>Avoid suspicious emails</h2>
 
@@ -240,22 +283,36 @@
 
       <!--for mobile-->
 
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row p">
+        <div class="col-12">
+          <img src="assets/logo-gmail.png" height=50px,width=50px>
+          <h2>Get Started with Gmail</h2>
+          <center>
+
+            <button type="button" class="btn btn-primary">Get Gmail</button>
+
+          </center>
+        </div>
+      </div>
+
+      <!--for mobile-->
+
+      <div class="row d-flex d-md-none ">
         <div class="col-12">
           <h3>Google</h3>
         </div>
       </div>
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none ">
         <div class="col-2">privacy</div>
         <div class="col-2">Terms</div>
         <div class="col-4">About Google</div>
         <div class="col-4">Google products</div>
       </div>
-      <div class="row d-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none">
         <div class="col-2">our policy</div>
       </div>
 
-      <div class="row d-sm-flex d-md-none d-xl-none">
+      <div class="row d-flex d-md-none">
         <div class="col-1">
           <img src="assets/question-mark.png">
         </div>
@@ -266,10 +323,10 @@
       <!--for tablet-->
       <div class="row d-none d-md-flex sp">
         <div class="col-12">
-          <h3>Google</h3>
+          <h5>Google</h5>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-none d-md-flex">
         <div class="col-1">privacy</div>
         <div class="col-1">Terms</div>
         <div class="col-1">About Google</div>
