@@ -1,0 +1,44 @@
+@media (max-width:576px) {
+    .border_section {
+        border: 2px solid black;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        padding-right: 10px;
+        margin-top: 3px;
+
+    }
+    .space {
+        padding-bottom: 10px;
+    }
+    .font_size {
+        font-size: 35px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+@media(min-width:768px) {
+    .medium_section {
+        display: inline-block;
+        width: 48%;
+    }
+    p {
+        font-size: 20px;
+    }
+    .border_bottom {
+        border-bottom: 1px solid lightgrey;
+    }
+    .border_section {
+        border: 2px solid black;
+        padding-left: 50px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        margin-top: 3px;
+    }
+    .sp {
+        padding: 2%;
+    }
+
+
+}

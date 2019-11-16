@@ -1,4 +1,159 @@
-img {
-    height: 10px;
-    width: 10px;
-}
+     .img {
+          height: 30px;
+          width: 35px;
+     }
+
+     .b {
+
+          /*border-bottom: 2px solid lightgrey;*/
+          box-shadow: 0 2px 6px 0 lightgrey, inset 0 -1px 0 0 #dadce0;
+     }
+
+
+     .center {
+          text-align: center;
+     }
+
+     .right {
+          text-align: right;
+     }
+
+     .text {
+          color: grey;
+     }
+
+     .margintop {
+          margin-top: 5px;
+          margin-left: 5px;
+          margin-right: 5px;
+     }
+
+     .landing-section {
+
+          background-color: whitesmoke;
+
+     }
+
+     /*  .section-heading {
+          background-color: yellow;
+     }*/
+
+     .get-gmail-link-container {
+          margin-top: 50px;
+          padding-bottom: 30px;
+     }
+
+     .app-link-image {
+          height: 50px;
+     }
+
+     .mobile-section {
+          padding-top: 80px;
+          padding-left: 15px;
+          padding-right: 15px;
+     }
+
+     .experience-image {
+          margin-top: 80px;
+          margin-bottom: 80px;
+
+     }
+
+     .full-width {
+          width: 100%;
+     }
+
+     .mobile-section-3-item {}
+
+     .mobile-section-3-item-content {
+          padding-left: 20px;
+          padding-right: 20px;
+          background-color: whitesmoke;
+          margin-bottom: 15px;
+          margin-left: 15px;
+          margin-right: 15px;
+     }
+
+     .gmail-logo {
+          width: 75px;
+     }
+
+     .footer {
+          background-color: whitesmoke;
+          padding-top: 20px;
+     }
+
+     .c {
+          margin-right: 15px;
+          margin-bottom: 10px;
+          padding-left: 0px;
+     }
+
+     .c1 {
+          margin-left: 15px;
+          margin-bottom: 10px;
+     }
+
+     .space {
+          padding-left: 25px;
+     }
+
+     .landing-section-tablet-content {
+          padding-left: 50px;
+          margin-top: 80px;
+
+     }
+
+     .landing-section-tablet {
+          padding-bottom: 50px;
+          padding-top: 50px;
+          background-color: whitesmoke;
+     }
+
+     .landing-section-description {
+          font-size: 14px;
+     }
+
+     .create-account-link-tablet {
+          margin-top: 20px;
+     }
+
+     /* .left-item {
+          display: inline-block;
+          width: 48%;
+     }
+
+     .right-item {
+          display: inline-block;
+          width: 48%;
+     }*/
+
+     .avoid-suspicious-section {
+          background-color: whitesmoke;
+          padding-top: 100px;
+          padding-bottom: 100px;
+     }
+
+     .bggrey {
+          background-color: whitesmoke;
+     }
+
+     .take-action-tablet-section {
+          padding-bottom: 100px;
+          padding-top: 100px;
+     }
+
+     @media (min-width:768px) {
+          .take-action-tablet-section {
+               padding-bottom: 100px;
+               padding-top: 100px;
+          }
+     }
+
+     @media (max-width:414px) {
+
+          .center {
+               text-align: center;
+          }
+     }
+     

@@ -1,0 +1,114 @@
+ /* .bg {
+    background-color: black;
+  }
+
+
+  .bgcol {
+    background-color: white;
+  }
+
+
+  .rsp {
+    margin-bottom: 20px;
+  }
+
+  .ssp {
+    margin: 20px;
+  }
+
+  .bgrow {
+    background-color: whitesmoke;
+  }
+
+
+  */
+
+ .center {
+     text-align: center;
+ }
+
+ .topic-padding {
+     padding-bottom: 30px;
+     padding-top: 30px;
+     background-color: whitesmoke;
+ }
+
+ .mobile-image {
+     width: 20%;
+ }
+
+ .mobile-section {
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+
+ .space-mobile {
+     padding: 15px;
+     margin-bottom: 20px;
+ }
+
+ .border-b {
+     border-bottom: 2px solid lightgrey;
+ }
+
+ .paddingt {
+     padding-top: 30px;
+ }
+
+ .paddingb {
+     padding-bottom: 30px;
+ }
+
+ .navbar-text {
+     color: dodgerblue;
+ }
+
+ .border-load {
+     border: 1px solid black;
+ }
+
+ .logo-container {
+     background-color: black;
+ }
+
+ .image-change {
+     filter: invert(100%);
+ }
+
+ .btn-outline-primary {
+     color: white;
+     border: 1px solid white;
+ }
+
+ .fontc,
+ p {
+     color: grey;
+ }
+
+ .topic-space {
+
+     padding-left: 10px;
+ }
+
+ .bgb {
+     background-color: lightskyblue;
+
+ }
+
+ .padding-section-footer {
+     margin-left: 6px;
+     margin-bottom: 3px;
+ }
+
+ .loadmore-footer {
+     margin-top: 25px;
+     margin-bottom: 25px;
+ }
+
+ .margin-space {
+
+     /* margin-right: 10px;*/
+ }
+ 

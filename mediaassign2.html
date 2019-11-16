@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <script src="bootstrap/jquery.min.js"></script>
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script>
+
+
+        <style>
+            body {
+                font-size: 0px;
+                margin: 0px;
+            }
+
+            /** {*/
+
+            /*    border: 1px solid black;*/
+
+            /*}*/
+
+            .grid {
+                width: 100%;
+                padding-top: 10%;
+            }
+
+            .grid-item-content {
+                background-color: blue;
+                height: 150px;
+            }
+
+
+            @media (min-width:768px) {
+                .grid {
+                    width: 50%;
+                    padding: 3%;
+                    display: inline-block;
+                }
+            }
+
+            @media screen and (min-width:996px) {
+                .grid {
+                    width: 25%;
+                    padding: 2%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="grid ">
+            <p class="grid-item-content"></p>
+        </div>
+        <div class="grid">
+            <p class="grid-item-content"></p>
+        </div>
+        <div class="grid">
+            <p class="grid-item-content"></p>
+        </div>
+        <div class="grid ">
+            <p class="grid-item-content"></p>
+        </div>
+    </body>
+
+</html>
