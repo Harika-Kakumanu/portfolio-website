@@ -5,6 +5,7 @@ body {
 h1 {
     text-align: center;
     border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
 
 }
 
@@ -36,6 +37,7 @@ p {
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 10px;
+        color: white;
         margin: 3%;
     }
 }
