@@ -1,0 +1,59 @@
+.border1 {
+    border-bottom: 2px solid grey;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+body {
+    padding: 2%;
+}
+
+@media (min-width:768px) {
+    .appear {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    p {
+        color: grey;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    body {
+        padding: 1%;
+        font-size: 0px;
+    }
+
+}
+
+@media (min-width:968px) {
+    .appear {
+        display: inline-block;
+        width: 30%;
+    }
+    body {
+        padding: 2%;
+        font-size: 0px;
+    }
+    .display1 {
+        display: none;
+    }
+    p {
+        color: blue;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .space {
+        margin-right: 3%;
+    }
+}
