@@ -9,11 +9,6 @@
 
 }
 
-.background-image {
-    background-image: url('https://www.w3schools.com/w3css/img_lights.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 200%;
-}
 
 .font-size {
     font-size: 20px;
@@ -162,4 +157,63 @@ body {
 
 .card {
     color: black;
+}
+
+/*.text {
+    */
+
+/*    background-color: black;*/
+
+/*    color: white;*/
+
+/*    font-size: 20px;*/
+
+/*    font-weight: bold;*/
+
+/*    margin: 0 auto;*/
+
+/*    padding: 10px;*/
+
+/*    width: 50%;*/
+
+/*    text-align: center;*/
+
+/*    position: absolute;*/
+
+/*    top: 50%;*/
+
+/*    left: 50%;*/
+
+/*    transform: translate(-50%, -50%);*/
+
+/*    mix-blend-mode: multiply;*/
+
+/*}*/
+
+.background-image1 {
+    background-image: url('https://www.w3schools.com/w3css/img_lights.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.text {
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    /*position: relative;*/
+    top: 50%;
+    /*left: 50%;*/
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+}
+
+.btn {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

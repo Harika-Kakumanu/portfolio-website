@@ -1,0 +1,68 @@
+.flexbox {
+    display: flex;
+    height: 500px;
+
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+img {
+    object-fit: contain;
+    width: 100px;
+}
+
+.html {
+    background-color: #0099cc;
+
+}
+
+.css {
+    background-color: purple;
+
+}
+
+.bs {
+    background-color: #ff9900;
+
+}
+
+.js {
+    background-color: #00b386;
+}
+
+/*@media (min-width:768px) {*/
+
+/*    .item {*/
+
+/*        display: flex;*/
+
+/*        justify-content: center;*/
+
+/*        align-items: center;*/
+
+/*        width: %;*/
+
+/*    }*/
+
+/*}*/
+
+/*@media (min-width:996px) {*/
+
+/*    .item {*/
+
+/*        display: flex;*/
+
+/*        justify-content: center;*/
+
+/*        align-items: center;*/
+
+/*        width: 20%;*/
+
+/*    }*/
+
+/*}*/
