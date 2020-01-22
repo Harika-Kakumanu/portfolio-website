@@ -1,0 +1,115 @@
+.w-10 {
+    width: 13%;
+
+}
+
+.tlogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    /*justify-content: flex-start;
+    */
+    /*align-self: center;*/
+}
+
+.tick {
+    display: flex;
+    align-self: center;
+}
+
+.sharediv {
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: flex-end;*/
+    align-self: flex-start;
+    width: 20px;
+    border: 1px solid black;
+    padding-right: 1%;
+}
+
+.inline_class {
+    display: inline;
+}
+
+.font {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+
+}
+
+.innerdiv {
+    display: flex;
+    align-self: flex-start;
+}
+
+.imgdiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg {
+    display: flex;
+    /*align-self: flex-end;
+    */
+    /*justify-content: space-around;*/
+}
+
+.like {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+.retweet {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+/** {*/
+
+/*    border: 2px solid black;*/
+
+/*    margin: 1px;*/
+
+/*}*/
+
+.drwater {
+    display: flex;
+    margin-top: 0px;
+}
+
+.tickdiv {
+    display: flex;
+    align-items: baseline;
+}
+
+/*.name {*/
+
+/*    display: flex;*/
+
+/*justify-content:;*/
+
+/*}*/
+
+.dropdown {
+    display: flex;
+    border: 1px solid black;
+}
+
+.divs2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.img1 {
+    width: 50px;
+    border-radius: 50px;
+
+}
