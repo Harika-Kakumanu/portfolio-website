@@ -1,0 +1,133 @@
+.flexbox {
+    /*display: flex;*/
+}
+
+.logodiv {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+
+}
+
+.logoimg {
+    width: 30px;
+    height: 30px;
+}
+
+.gmailtext {
+    display: flex;
+    color: grey;
+    font-size: 20px;
+    flex-grow: 1;
+
+}
+
+.btn {
+    display: flex;
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px;
+
+}
+
+.signdiv {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    box-shadow: 0 2px 6px 0 lightgrey, inset 0 -1px 0 0 #dadce0;
+}
+
+.getmorediv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.landimg {*/
+
+/*    display: flex;*/
+
+/*    width: 300px;*/
+
+/*    align-self: center;*/
+
+/*}*/
+
+h1 {
+    display: flex;
+    align-self: center;
+}
+
+p {
+    display: flex;
+    align-self: center;
+}
+
+.btn1 {
+    display: flex;
+    background-color: dodgerblue;
+    color: white;
+    width: 80px;
+    height: 40px;
+    align-self: center;
+    margin-top: 10%;
+}
+
+.size {
+    width: 15%;
+    height: 50px;
+}
+
+.expdiv,
+.staydiv,
+.neverdiv,
+.takeactiondiv,
+.avoiddiv,
+.getstarteddiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.googlediv {
+    display: flex;
+    justify-content: center;
+}
+
+.size1 {
+    width: 60%;
+}
+
+.logoimg2 {
+    width: 90px;
+}
+
+h3 {
+    color: #595959;
+    /*align-self: flex-start;*/
+}
+
+.innerfooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footertext {
+    color: gray;
+}
+
+.footerlastdiv {
+    display: flex;
+    align-items: center;
+}
+
+.img_que {
+    width: 20px;
+    height: 20px;
+}
+
+.english {
+    display: flex;
+    flex-grow: 1;
+}

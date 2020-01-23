@@ -1,6 +1,5 @@
 .w-10 {
     width: 13%;
-
 }
 
 .tlogo {
@@ -39,7 +38,7 @@
 
 .flexbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px solid grey;
 
 }
@@ -56,19 +55,14 @@
 
 .msg {
     display: flex;
-    /*align-self: flex-end;
-    */
-    /*justify-content: space-around;*/
 }
 
 .like {
     display: flex;
-    /*justify-content: space-around;*/
 }
 
 .retweet {
     display: flex;
-    /*justify-content: space-around;*/
 }
 
 /** {*/
@@ -89,17 +83,8 @@
     align-items: baseline;
 }
 
-/*.name {*/
-
-/*    display: flex;*/
-
-/*justify-content:;*/
-
-/*}*/
-
 .dropdown {
     display: flex;
-    border: 1px solid black;
 }
 
 .divs2 {
@@ -111,5 +96,8 @@
 .img1 {
     width: 50px;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
