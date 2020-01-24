@@ -43,16 +43,6 @@
     align-items: center;
 }
 
-/*.landimg {*/
-
-/*    display: flex;*/
-
-/*    width: 300px;*/
-
-/*    align-self: center;*/
-
-/*}*/
-
 h1 {
     display: flex;
     align-self: center;
@@ -105,7 +95,6 @@ p {
 
 h3 {
     color: #595959;
-    /*align-self: flex-start;*/
 }
 
 .innerfooter {
@@ -130,4 +119,70 @@ h3 {
 .english {
     display: flex;
     flex-grow: 1;
+}
+
+@media (max-width:357px) {
+    .tabheaderdiv,
+    .tabh1 {
+        display: none;
+    }
+}
+
+@media(min-width:400px) {
+    .tabheaderdiv,
+    .tab_getimgdiv {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .logodiv,
+    .signdiv,
+    .getmorediv {
+        display: none;
+    }
+    .tabheaderdiv {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 2px 6px 0 lightgrey, inset 0 -1px 0 0 #dadce0;
+    }
+    .tabforwork,
+    .tabsignin {
+        margin-right: 3%;
+        color: gray;
+    }
+    .tab_getmorediv {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    .tab_getimgdiv {
+        display: flex;
+        justify-content: space-around;
+    }
+    .tablandimg {
+        height: 200px;
+        object-fit: contain;
+        width: 50%;
+    }
+    .tabbtn {
+        width: 30%;
+        height: 20%;
+        align-self: flex-start;
+        background-color: dodgerblue;
+        color: white;
+    }
+    h1 {
+        align-self: flex-start;
+    }
+    .tabh1 {
+        align-self: center;
+    }
+}
+
+* {
+
+    border: 2px solid black;
+
 }
