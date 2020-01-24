@@ -8,7 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    /*width: 25%;*/
+    flex-grow: 1;
 }
 
 img {
@@ -34,35 +35,3 @@ img {
 .js {
     background-color: #00b386;
 }
-
-/*@media (min-width:768px) {*/
-
-/*    .item {*/
-
-/*        display: flex;*/
-
-/*        justify-content: center;*/
-
-/*        align-items: center;*/
-
-/*        width: %;*/
-
-/*    }*/
-
-/*}*/
-
-/*@media (min-width:996px) {*/
-
-/*    .item {*/
-
-/*        display: flex;*/
-
-/*        justify-content: center;*/
-
-/*        align-items: center;*/
-
-/*        width: 20%;*/
-
-/*    }*/
-
-/*}*/

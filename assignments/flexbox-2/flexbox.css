@@ -1,69 +1,172 @@
-.w-10 {
-    width: 13%;
+.twitter-card {
+    display: flex;
 }
 
-.tlogo {
+.user-img {
     width: 50px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 25px;
+}
+
+.tweet-user-details {
     display: flex;
-    /*justify-content: flex-start;
+    align-items: flex-start;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.verified-icon {
+    width: 24px;
+}
+
+.tweet-actions {
+    width: 24px;
+    margin-left: auto;
+    /*margin-right: auto;*/
+}
+
+.tweet-container {
+    flex-grow: 1;
+}
+
+.tweet-time {
+    /*flex-grow: 1;
     */
-    /*align-self: center;*/
 }
 
-.tick {
-    display: flex;
-    align-self: center;
-}
-
-.sharediv {
-    display: flex;
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    align-self: flex-start;
-    width: 20px;
-    border: 1px solid black;
-    padding-right: 1%;
-}
-
-.inline_class {
-    display: inline;
-}
-
-.font {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.flexbox {
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid grey;
-
-}
-
-.innerdiv {
-    display: flex;
-    align-self: flex-start;
-}
-
-.imgdiv {
+.tweet-status-container {
     display: flex;
     justify-content: space-between;
 }
 
-.msg {
+.tweet-stat-item {
     display: flex;
 }
 
-.like {
-    display: flex;
+.tweet-status-container img {
+    width: 20px;
 }
 
-.retweet {
-    display: flex;
+.tweet-status-container p {
+    margin-left: 10px;
 }
+
+/** {
+    */
+
+/*    border: 1px solid black;*/
+
+/*}*/
+
+/*.w-10 {*/
+
+/*    width: 13%;*/
+
+/*}*/
+
+/*.tlogo {*/
+
+/*    width: 50px;*/
+
+/*    height: 50px;*/
+
+/*    border-radius: 50px;*/
+
+/*    display: flex;*/
+
+/*justify-content: flex-start;
+    */
+
+/*align-self: center;*/
+
+/*}*/
+
+/*.tick {*/
+
+/*    display: flex;*/
+
+/*    align-self: center;*/
+
+/*}*/
+
+/*.sharediv {*/
+
+/*    display: flex;*/
+
+/*flex-direction: column;*/
+
+/*justify-content: flex-end;*/
+
+/*    align-self: flex-start;*/
+
+/*    width: 20px;*/
+
+/*    border: 1px solid black;*/
+
+/*    padding-right: 1%;*/
+
+/*}*/
+
+/*.inline_class {*/
+
+/*    display: inline;*/
+
+/*}*/
+
+/*.font {*/
+
+/*    font-weight: bold;*/
+
+/*    font-size: 15px;*/
+
+/*}*/
+
+/*.flexbox {*/
+
+/*    display: flex;*/
+
+/*    justify-content: space-around;*/
+
+/*    border: 1px solid grey;*/
+
+/*}*/
+
+/*.innerdiv {*/
+
+/*    display: flex;*/
+
+/*    align-self: flex-start;*/
+
+/*}*/
+
+/*.imgdiv {*/
+
+/*    display: flex;*/
+
+/*    justify-content: space-between;*/
+
+/*}*/
+
+/*.msg {*/
+
+/*    display: flex;*/
+
+/*}*/
+
+/*.like {*/
+
+/*    display: flex;*/
+
+/*}*/
+
+/*.retweet {*/
+
+/*    display: flex;*/
+
+/*}*/
 
 /** {*/
 
@@ -73,31 +176,48 @@
 
 /*}*/
 
-.drwater {
-    display: flex;
-    margin-top: 0px;
-}
+/*.drwater {*/
 
-.tickdiv {
-    display: flex;
-    align-items: baseline;
-}
+/*    display: flex;*/
 
-.dropdown {
-    display: flex;
-}
+/*    margin-top: 0px;*/
 
-.divs2 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
+/*}*/
 
-.img1 {
-    width: 50px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*.tickdiv {*/
 
-}
+/*    display: flex;*/
+
+/*    align-items: baseline;*/
+
+/*}*/
+
+/*.dropdown {*/
+
+/*    display: flex;*/
+
+/*}*/
+
+/*.divs2 {*/
+
+/*    display: flex;*/
+
+/*    flex-direction: column;*/
+
+/*    flex-grow: 1;*/
+
+/*}*/
+
+/*.img1 {*/
+
+/*    width: 50px;*/
+
+/*    border-radius: 50px;*/
+
+/*    display: flex;*/
+
+/*    justify-content: center;*/
+
+/*    align-items: center;*/
+
+/*}*/
