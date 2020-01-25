@@ -121,24 +121,45 @@ h3 {
     flex-grow: 1;
 }
 
-@media (max-width:357px) {
+@media (min-width:144px) {
     .tabheaderdiv,
-    .tabh1 {
+    .tabh1,
+    .tabstaynever,
+    .tab-take-action-div,
+    .tab_getimgdiv,
+    .tab-avoid-div,
+    .tab-footer {
         display: none;
     }
 }
 
-@media(min-width:400px) {
-    .tabheaderdiv,
-    .tab_getimgdiv {
-        display: none;
-    }
-}
+/*@media(min-width:400px) {
+    */
+
+/*    .tabheaderdiv,*/
+
+/*    .tab_getimgdiv,*/
+
+/*    .tabstaynever,*/
+
+/*    .tabh1,*/
+
+/*    .tab-take-action-div {*/
+
+/*        display: none;*/
+
+/*    }
+}*/
 
 @media (min-width:768px) {
     .logodiv,
     .signdiv,
-    .getmorediv {
+    .getmorediv,
+    .staydiv,
+    .neverdiv,
+    .avoiddiv,
+    .takeactiondiv,
+    .footer {
         display: none;
     }
     .tabheaderdiv {
@@ -173,16 +194,57 @@ h3 {
         background-color: dodgerblue;
         color: white;
     }
-    h1 {
+    h1,
+    p {
         align-self: flex-start;
     }
     .tabh1 {
         align-self: center;
     }
+    .tabstaynever {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tab-size {
+        width: 450px;
+    }
+    .tab-take-action-div,
+    .tab-avoid-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+    img {
+        width: 400px;
+    }
+    .tab-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-innerfooter {
+        display: flex;
+        justify-content: space-around;
+        /*flex: 1;*/
+    }
+    .tab-drop {
+        width: 20px;
+    }
+    .img_que{
+            width: 20px;
+    height: 20px;
+        align-self:center;
+    }
+    
+    .footertext {
+        display: flex;
+        /*align-self:center;*/
+        flex: 1;
+    }
 }
 
-* {
+/** {*/
 
-    border: 2px solid black;
+/*    border: 1px solid black;*/
 
-}
+/*}*/
