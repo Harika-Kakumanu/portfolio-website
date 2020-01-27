@@ -198,7 +198,10 @@ h3 {
         background-color: dodgerblue;
         color: white;
     }
-
+    .tab-expdiv {
+        display: flex;
+        flex-direction: column;
+    }
 
     h1,
     p {
