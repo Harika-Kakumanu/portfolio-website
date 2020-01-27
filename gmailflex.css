@@ -121,37 +121,36 @@ h3 {
     flex-grow: 1;
 }
 
-@media (min-width:144px) {
-    .tabheaderdiv,
-    .tabh1,
-    .tabstaynever,
-    .tab-take-action-div,
-    .tab_getimgdiv,
-    .tab-avoid-div,
-    .tab-footer {
-        display: none;
-    }
+.tabheaderdiv,
+.tabh1,
+.tabstaynever,
+.tab-take-action-div,
+.tab_getimgdiv,
+.tab-avoid-div,
+.tab-footer,
+.tab-expdiv,
+.tab-getstarteddiv {
+    display: none;
 }
 
-/*@media(min-width:400px) {
-    */
-
-/*    .tabheaderdiv,*/
-
-/*    .tab_getimgdiv,*/
-
-/*    .tabstaynever,*/
-
-/*    .tabh1,*/
-
-/*    .tab-take-action-div {*/
-
-/*        display: none;*/
-
-/*    }
-}*/
 
 @media (min-width:768px) {
+
+    .flexbox2 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+
+    }
+
+    .flexbox2>div {
+        margin-bottom: 10%;
+
+    }
+    .tabh1 {
+        display: flex;
+    }
+
     .logodiv,
     .signdiv,
     .getmorediv,
@@ -159,7 +158,9 @@ h3 {
     .neverdiv,
     .avoiddiv,
     .takeactiondiv,
-    .footer {
+    .footer,
+    .expdiv,
+    .getstarteddiv {
         display: none;
     }
     .tabheaderdiv {
@@ -172,48 +173,92 @@ h3 {
         margin-right: 3%;
         color: gray;
     }
+    .tab_getimgdiv {
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+    }
     .tab_getmorediv {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        width: 50%;
+        justify-content: center;
+        width: 40%;
     }
-    .tab_getimgdiv {
-        display: flex;
-        justify-content: space-around;
-    }
+
     .tablandimg {
-        height: 200px;
+        height: 500px;
         object-fit: contain;
+        align-self: center;
         width: 50%;
     }
     .tabbtn {
-        width: 30%;
-        height: 20%;
+        width: 100px;
+        height: 50px;
         align-self: flex-start;
         background-color: dodgerblue;
         color: white;
     }
+
+
     h1,
     p {
         align-self: flex-start;
     }
+
     .tabh1 {
         align-self: center;
     }
+    .googlediv {
+        margin-bottom: 4%;
+    }
+    .google {
+        padding-right: 1%;
+    }
+    .expimg {
+        width: 800px;
+    }
+
     .tabstaynever {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    .tab-size {
-        width: 450px;
-    }
-    .tab-take-action-div,
-    .tab-avoid-div {
+    .tab-stay,
+    .tab-never {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 2%;
+        width: 45%;
+        background-color: whitesmoke;
+    }
+
+    .tab-size {
+        width: 430px;
+        padding-bottom: 6%;
+        margin-top: 9%;
+    }
+
+    .tab-take-action-div {
+        display: flex;
+        justify-content: space-around;
         align-items: center;
         flex: 1;
+    }
+
+    .tab_action {
+        width: 45%;
+    }
+
+    .tab-avoid-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: whitesmoke;
+        padding-bottom: 3%
+        /*flex: 1;
+        */
+    }
+    .tab_avoid {
+        width: 45%;
     }
     img {
         width: 400px;
@@ -221,30 +266,28 @@ h3 {
     .tab-footer {
         display: flex;
         flex-direction: column;
+        background-color: whitesmoke;
+        margin-top: 4%;
     }
     .tab-innerfooter {
         display: flex;
-        justify-content: space-around;
-        /*flex: 1;*/
+        padding-bottom: 3%;
+        justify-content: space-between;
+
     }
     .tab-drop {
         width: 20px;
     }
-    .img_que{
-            width: 20px;
-    height: 20px;
-        align-self:center;
+    .img_que {
+        width: 20px;
+        height: 20px;
+        align-self: center;
     }
-    
-    .footertext {
+
+    .tab-getstarteddiv {
         display: flex;
-        /*align-self:center;*/
-        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
-
-/** {*/
-
-/*    border: 1px solid black;*/
-
-/*}*/
