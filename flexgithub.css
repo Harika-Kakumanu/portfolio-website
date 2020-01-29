@@ -11,7 +11,7 @@
 
  }
 
- .btn {
+ .btn1 {
   background-color: black;
   border-color: white;
   border-radius: 3px;
@@ -54,6 +54,7 @@
  .three {
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
  }
 
  .three>div>img {
@@ -73,6 +74,7 @@
  }
 
  .apps_div>div {
+  padding-bottom: 3%;
   border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-around;
@@ -88,7 +90,8 @@
  .one>img,
  .two>img,
  .theen>img,
- .eight>img {
+ .eight>img,
+ .fifteen>img {
   background-color: aliceblue;
  }
 
@@ -96,9 +99,44 @@
   width: 60%;
  }
 
+ a {
+  border: 1px solid black;
+  color: #0080ff;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+ }
+
+ .foot1,
+ .foot2 {
+  display: flex;
+
+ }
+
+ .btn {
+
+  background-color: aliceblue;
+  margin: 3px;
+  color: #0080ff;
+  flex: 1 1 auto;
+  border: 1px solid aliceblue;
+ }
+
  /** {*/
 
  /* border: 1px solid black;*/
 
  /*}*/
- 
+@media(min-width:144px){
+ .flexbox_1{
+  display: none
+ }
+}
+ @media(min-width:768px)
+{
+ .flexbox{
+  display:none;
+ }
+} 
