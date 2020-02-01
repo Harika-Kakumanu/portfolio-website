@@ -1,12 +1,13 @@
 body {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main_div {
     display: flex;
     margin-top: 15%;
     height: 60vh;
-    opacity: 0.8;
+    opacity: 1.5;
     background-image: url("assets/background-image.jpeg");
 }
 
@@ -15,10 +16,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
-    /*margin-top: 4%;*/
     padding-left: 4%;
     background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 15px;
 
 }
@@ -32,8 +32,6 @@ body {
 .week {
     font-size: 20px;
     font-weight: 900;
-    /*font-family: 'Rubik', sans-serif;*/
-    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .date {
@@ -57,21 +55,15 @@ body {
 }
 
 .degree {
-    font-size: 40px;
-    font-family: 'Bowlby One SC', cursive;
+    font-size: 45px;
+    font-weight: bold;
     margin-top: 0px;
 }
 
-
-
-
-
-
-
 .sunny {
     margin-top: -50px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: bold;
 
 }
 
@@ -93,7 +85,6 @@ body {
 .right_top {
     display: flex;
     justify-content: space-around;
-    /*margin-top: 6%;*/
     padding-left: 3%;
 }
 
@@ -128,43 +119,29 @@ body {
 .sat {
     display: flex;
     flex-direction: column;
-    margin-top: -5px;
+    width: 50px;
+
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
-    justify-content: space-evenly;
+
     align-items: center;
 
 }
 
-.sat>img {
-    padding: 6px 5px 0px 5px;
-    /*margin: 4px 10px 0px 10px;*/
-}
-
-.sat_week {
-    /*padding: -5px 2px 0px 2px;
-    */
-    padding-top: 5px;
-    margin: 0px 5px 0px 10px;
-}
-
-.deg_sat {
-
-    margin: 0px 5px 0px 10px;
-}
-
-.sun,
-.mon,
-.tue {
+.next_days {
     color: white;
 }
 
+.sat>img,
+.next_days>img {
+    margin-top: 5px;
+}
 
-.sun>p,
-.mon>p,
-.tue>p {
-    margin-top: 0px;
+.sat>p,
+.next_days>p {
+    margin-bottom: 0px;
+    margin-top: 5px;
 }
 
 .right_bottom {
