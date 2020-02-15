@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <script>
+            // function startcar() {
+            //     return 'Car started';
+            // }
+
+            // function stopcar() {
+            //     return 'Car stopped';
+            // }
+
+            // let car1 = {
+            //     color: 'white',
+            //     model: 'ciaz',
+            //     start: startcar,
+            //     stop: stopcar,
+
+            // }
+            // let car2 = {
+            //     color: 'black',
+            //     model: 'verna',
+            //     start: startcar,
+            //     stop: stopcar,
+            // };
+
+            // alert(car1.stop());
+            // alert(car2.stop());
+            function startbus() {
+                return 'started';
+            }
+
+            function stopbus() {
+                return 'stopped';
+            }
+
+            function break1() {
+                return 'break';
+            }
+
+            let person = {
+                firstName: 'Jhon',
+                lastName: 'Jacob',
+                age: '38',
+                gender: 'Male',
+                experience: '12 years',
+            }
+            // alert(person);
+            let bus = {
+                owner: 'Kallada travels',
+                color: 'red',
+                type: 'AC',
+                'seating capacity': '45',
+                start: startbus,
+                stop: stopbus,
+                driver: person,
+                busbreak: break1,
+            };
+            bus.owner = 'Morning stars';
+            // alert(bus.owner);
+            delete bus.driver.age;
+            // alert(bus.driver.age);
+            bus.driver.fullname = bus.driver.firstName + bus.driver.lastName;
+            alert(bus.driver.fullname);
+            alert(bus.busbreak());
+        </script>
+    </body>
+
+</html>

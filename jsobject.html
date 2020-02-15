@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>JavaScript Objects</title>
+    </head>
+
+    <body>
+        <h2>We create the javascripts objects using the "let object name={}"</h2>
+        <script>
+            let tyre1 = {
+                brand: 'MRF',
+                type: 'Tube less',
+                rimdiameter: '17 inches',
+            };
+            let tyre2 = {
+
+            }
+            let tyre3 = {
+
+            }
+            let tyre4 = {
+
+            }
+            let car = {
+                color: 'silver',
+                model: "tata",
+                weight: "800kg",
+                'fuel type': 'diesel',
+                tyre: tyre1, //Nested objects
+                tyrelist: [tyre1, tyre2, tyre3, tyre4],
+                // start: function() {
+                //     return "started";
+                start() {
+                    return "started";
+                },
+                stop() {
+                    return "stop";
+                }
+
+            };
+            // alert(car.tyrelist[0].brand);
+            // alert(car.tyrelist);
+            // alert(car.start()); //when the object has function then we all it as the method 
+            // alert(car.stop());
+
+            alert(car.hasOwnProperty("tyrelist"));
+            alert(car.hasOwnProperty("start"));
+            alert(car.tyrelist[0].hasOwnProperty('brand'));
+
+
+            // alert(car.tyre.brand);
+            // alert(car['tyre']['brand']); //Accessing the property in the object with in the object
+            // alert(car.tyre['brand']);
+            // alert(car['tyre'].brand);
+
+            // alert(car.color);
+            // alert(car.type);// it throws undefined bcoz ,the type property is not defined in the car object;
+            // let carweight = car.weight;//we can assign car.weight value to the another variable and we can access it.
+            // alert(carweight);
+            // let fueltype = car["fuel type"];
+            // alert(car['color']); // we can access the object properties by using in this way<--
+            // let carweight = 'weight';
+            // alert(car[carweight]);
+
+            // car.color = 'red'; //Updation of the value in the object.
+            // alert(car['color']);
+
+            // car.model = 'ciaz';
+            // alert(car.model);
+
+            // car.model = ciaz; //doesn't have the property like ciaz
+            // alert(car.model);
+
+            // car.fuelcapacity = '460 lit'; //Adding the new property to the car object bcoz it didn't have with in the car object
+            // alert(car.fuelcapacity);
+
+            // delete car.weight; //Delete the property in the car object;
+            // alert(car.weight);
+
+            // delete car['fuel type'];
+            // alert(car['fuel type']);
+
+            // alert(tyre);
+        </script>
+    </body>
+
+</html>

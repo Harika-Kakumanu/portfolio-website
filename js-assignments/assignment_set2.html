@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Basics</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+
+        <script>
+            // let array = ['hello', '1'];
+            // alert(array);
+
+            // let nested_array = []
+            // nested_array[0] = ["Bulls", 23]
+            // nested_array[0].push([1, 2, 3, 4, 5])
+            // nested_array[0].push(["one", "Two", "Three"])
+            // nested_array.push(["white sox", 45])
+            // alert(nested_array)
+
+
+            // function array_acess(a) {
+            //     alert(a[1]);
+            // }
+            // let my_array = [1, -12]
+            // array_acess(my_array)
+            // array_acess([2, 4])
+
+
+            // let myarray = [18, 64, 99];
+            // myarray[0] = 45;
+            // myarray[2] = 'fifty four';
+            // alert(myarray);
+
+
+            // let myarray1 = [
+            //     [1, 2, 3],
+            //     [4, 5, 6],
+            //     [7, 8, 9],
+            //     [
+            //         [10, 11, 12], 13, 14
+            //     ]
+            // ]
+            // alert(myarray1[2][1])
+            // alert(myarray1[3][0][2])
+
+
+            // let myarray2 = ["John", [2], 23];
+            // myarray2.push(["dog", 3]);
+            // alert(myarray2);
+
+
+            // let myarray3 = ["John", [2], 23];
+            // alert(myarray3.length);
+
+
+            // let myarray4 = ["John", [2], 23];
+            // alert(myarray4.pop());
+            // alert(myarray4.shift()); //9 question
+
+
+            // let array5 = ["John", [2], 23];
+            // array5.unshift("Good Morning");
+            // alert(array5);
+
+
+            // let array6 = ["John", [2], 23];
+            // array6.splice(1, 1);
+            // alert(array6);
+
+            let splice_array = [2, 4, 5, 1, 7, 5, 2, 1]; //12 question
+            splice_array.splice(1, 4);
+            let sum = splice_array.reduce(function(a, b) {
+                return a + b;
+            });
+            console.log(sum);
+
+
+            // let slice_array = [10, 11, 12, 13, 14, 15];c
+            // console.log(slice_array.slice(2, 4));
+
+            let indexof_array = [1, "two", 3, "four"];
+            console.log(indexof_array.indexOf(3));
+            console.log(indexof_array.indexOf(5)); //15 question
+
+            let indexarr2 = [1, ["two", 3], "four"]
+            console.log(indexarr2[1].indexOf("two"));
+
+            let lastindex = ["a", "b", "a", "a", "e", "a", "f"];
+            console.log(lastindex.lastIndexOf("a"));
+
+            let addelement = [1, ["two", 3], "four"];
+            addelement[addelement.length] = "new element"; //18 question
+            addelement.push(12, 13, 14, 1, 5); //19 question
+            console.log(addelement);
+
+
+            let concat = [1, ["two", 3], "four"];
+            console.log(concat.concat(2, 4));
+
+
+            let new_splice = ["a", "b", "c", "d", "e", "f", "g"]; //21 question
+            new_splice.splice(4, 3, "one", "two", "three");
+            console.log(new_splice)
+
+            let splice_22 = [10, 11, 12, 12, 15]; //22 question
+            splice_22.splice(3, 2, 13, 14, 15);
+            console.log(splice_22);
+
+            let sort_23 = [2, 4, 1, 0, 5];
+            console.log(sort_23.sort());
+
+            let join_24 = ['Hello', 'Good', 'Morning'];
+            console.log(join_24.join(' '));
+
+            let reverse_25 = [2, 4, 1, 0, 5];
+            console.log(reverse_25.reverse());
+
+            let costumes = {
+                'hat': 'Ballcap',
+                'shirt': 'Jersey',
+                'shoes': 'cleats'
+            }
+            console.log(costumes.hat)
+            console.log(costumes.shirt)
+            console.log(costumes.shoes)
+
+            let car = {
+                "model name": "verna",
+                "fuel type": "petrol",
+                "drive mode": "manual"
+            }
+            console.log(car['model name'])
+            console.log(car['fuel type'])
+            console.log(car['drive mode'])
+
+
+            let myDog = {
+                "name": "Coder",
+                "legs": 4,
+                "tails": 1,
+                "friends": ["puppie"]
+            }
+            myDog.name = 'kimmie';
+            alert(myDog.name)
+            myDog.bark = 'woof';
+            alert(myDog.bark);
+            delete myDog.tails;
+            alert(myDog.tails);
+
+            function isPropertyExists(p,s) {
+                return p.hasOwnProperty(s);
+            }
+            let positions = {
+                top: "hat",
+                bottom: "pants",
+            }
+            alert(isPropertyExists(positions, "bottom"))
+            alert(isPropertyExists(positions, "middle"))
+        </script>
+    </body>
+
+</html>
