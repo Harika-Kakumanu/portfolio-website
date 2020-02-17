@@ -15,33 +15,33 @@
 
 
     <div class="outerdiv">
-      <div class="header"></div>
+      <div id="output"></div>
       <div class="innerdiv">
         <div class="firstcol">
-          <button class='add'>+</button>
-          <button class='seven'>7</button>
-          <button class='four'>4</button>
-          <button class='one'>1</button>
-          <button class='zero'>0</button>
+          <button onclick="plus_symbol('+')" class='add'>+</button>
+          <button onclick="plus_symbol('7')" class='seven'>7</button>
+          <button onclick="plus_symbol('4')" class='four'>4</button>
+          <button onclick="plus_symbol('1')" class='one'>1</button>
+          <button onclick="plus_symbol('0')" class='zero'>0</button>
         </div>
         <div class="secondcol">
-          <button class='sub'>-</button>
-          <button class='eight'>8</button>
-          <button class='five'>5</button>
-          <button class='two'>2</button>
-          <button class='dot'>.</button>
+          <button onclick="plus_symbol('-')" class='sub'>-</button>
+          <button onclick="plus_symbol('8')" class='eight'>8</button>
+          <button onclick="plus_symbol('5')" class='five'>5</button>
+          <button onclick="plus_symbol('2')" class='two'>2</button>
+          <button onclick="plus_symbol('.')" class='dot'>.</button>
         </div>
 
         <div class="thirdcol">
-          <button class='mul'>X</button>
-          <button class='nine'>9</button>
-          <button class='six'>6</button>
-          <button class='three'>3</button>
-          <button class='ac'>AC</button>
+          <button onclick="plus_symbol('*')" class='mul'>x</button>
+          <button onclick="plus_symbol('9')" class='nine'>9</button>
+          <button onclick="plus_symbol('6')" class='six'>6</button>
+          <button onclick="plus_symbol('3')" class='three'>3</button>
+          <button onclick="ac_symbol('ac')" class='ac'>AC</button>
         </div>
         <div class="fourthcol">
-          <button class="div">/</button>
-          <button class="equal">=</button>
+          <button onclick="plus_symbol('/')" class="div">/</button>
+          <button onclick="onClickShowOutput()" class="equal">=</button>
         </div>
 
       </div>
@@ -49,8 +49,8 @@
 
     <!-- Write your html code from here-->
 
-    <button onclick="onClickShowOutput()">Show Output</button>
-    <div id="output"></div>
+    <!--<button onclick="">Show Output</button>-->
+
   </body>
 
 </html>
@@ -61,5 +61,5 @@
 
 
 
-
+    
 -->
