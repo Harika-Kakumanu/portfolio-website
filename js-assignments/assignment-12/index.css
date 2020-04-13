@@ -1,0 +1,95 @@
+#atmApp {
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 30%;
+
+}
+
+#firstRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#secondRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.same-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+
+#displayResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    background-color: whitesmoke;
+}
+
+#displayInputText {
+    width: 200px;
+    height: 40px;
+    border: 2px solid purple;
+    font-size: 20px;
+}
+
+#submitButton {
+    width: 90px;
+    height: 40px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+#forSpan {
+    display: none;
+    justify-content: space-evenly;
+}
+
+#errorDisplay {
+    display: none;
+    color: red;
+}
+
+#myTable {
+    border: 1px solid black;
+    margin-left: 15%;
+}
+
+#forTable {
+    display: none;
+}
+
+#myRow {
+    border: 1px solid black;
+}
+
+#displayPTagText {
+    display: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+#forTimer{
+    display: none;
+}

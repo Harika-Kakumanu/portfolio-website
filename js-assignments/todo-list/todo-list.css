@@ -1,0 +1,67 @@
+#toDoListApp {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;
+    */
+}
+
+#toDoTextOnTop {
+    font-size: 80px;
+    color: #e6b3cc;
+    margin-bottom: 15px;
+}
+
+#outerDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 3px 2px 3px 2px grey;
+}
+
+#inputTakingDiv {
+    width: 600px;
+    min-height: 70px;
+    background-color: white;
+    border: 1px solid white;
+    /*box-shadow: 3px 2px 3px 2px grey;*/
+    display: flex;
+    flex-direction: column;
+}
+
+#arrowTag {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#showToDoItemsInput {
+    font-size: 24px;
+    color: #4d4d4d;
+    width: 500px;
+    border: 0px solid lightgrey;
+
+}
+
+#actionsOfTheItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#threeActionItems {
+    display: flex;
+    margin-left: 1%;
+    /*justify-content: space-around;*/
+}
+
+#actionsOfTheItems>a {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.todo-list-item {
+    display: flex;
+}

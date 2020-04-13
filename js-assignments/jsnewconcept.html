@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script>
+      // function Person(firstName, lastName) {
+      //   this.firstName = firstName;
+      //   this.lastName = lastName;
+      // }
+      // Person.getFullName=function(){
+
+      // }
+
+      //c const member = new Person('ibhubs', 'ibcricket');
+      // member.getFullname = function() {
+      //   return `${this.firstName} ${this.lastName}`;
+      // }
+      //console.log(member.getFullname());
+
+
+
+      // class Person {
+      //   constructor(firstName, lastName) {
+      //     this.firstName = firstName;
+      //     this.lastName = lastName;
+      //   }
+
+      //   static getFullName() {
+      //     console.log('Person');
+      //     return `${this.firstName} ${this.lastName}`;
+      //   }
+      // };
+      // const member = new Person('ibhubs', 'ibcricket');
+
+      // member.getFullName = function() {
+      //   console.log('member');
+      //   return `${this.firstName} ${this.lastName}`;
+      // }
+
+      //Person.firstName = 'Harika';
+      // Person.lastName = 'Kakumanu';
+      // 
+      // console.log(member.getFullname());
+
+      // console.log(member.getFullName());
+
+      // console.log('first Statement');
+      // let userDetails;
+      // getUserDetails(1, function(userDetails) {
+      //   console.log("user details", userDetails);
+      // });
+
+      // console.log('last Statement');
+
+      // function getUserDetails(id, callbac) {
+
+      //   setTimeout(() => {
+
+      //     console.log('facebook user');
+      //     callbac({ id: id, userName: 'jack' });
+
+      //   }, 1000);
+
+      // }
+
+
+      // let imgtag = document.createElement('img');
+      // imgtag.setAttribute('src', 'static/Hobbies/music-player/music-player.png');
+      // imgtag.setAttribute('id', 'imgTag');
+      // let div1 = document.createElement('div');
+      // div1.setAttribute('id', 'divTag');
+      // div1.appendChild(imgtag);
+
+      // document.getElementById('imgTag').onload = () => {
+      //   console.log('image loaded');
+      // }
+      // console.log(imgtag);
+
+
+      function loadImage(url, onSuccessLoadImage) {
+        const imge1 = document.createElement('img');
+
+        imge1.onload = () => {
+          console.log(`${url} image is loaded`);
+          onSuccessLoadImage(imge1);
+        };
+        setTimeout(() => {
+          imge1.src = url;
+        }, 1000);
+      }
+      loadImage('../static/Hobbies/music-player/music-player.png', (imge1) => {
+        document.body.appendChild(imge1);
+        console.log('image 1 is appended to body');
+      });
+    </script>
+  </body>
+
+</html>

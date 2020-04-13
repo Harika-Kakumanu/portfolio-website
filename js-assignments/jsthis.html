@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script>
+      // const person = {
+      //   name: 'Ravi',
+      //   age: 23,
+      //   profession: 'student',
+      //   dailyRoutine: function() {
+      //     console.log('Hi i am', this.name);
+      //   }
+      // }
+      // person.dailyRoutine();
+
+      // function createCar() {
+      //   console.log('createCar', this);
+      // }
+
+      // createCar();
+
+      // const car = {
+      //   brand: 'Hyundai',
+      //   noOfTyres: 4,
+      //   start: function() {
+      //     console.log('started', this.brand);
+      //   },
+      //   tyres: ['a', 'b', 'c', 'd'],
+      //   showTyreList: function() {
+      //     this.tyres.forEach(function(eachTyre) {
+      //       console.log(`${eachTyre}:${car.brand}`);
+      //     });
+
+      //   }
+      // }
+      // car.showTyreList();
+
+      //solution 2:  using that Or self
+      // const car = {
+      //   brand: 'Hyundai',
+      //   noOfTyres: 4,
+      //   start: function() {
+      //     console.log('started', this.brand);
+      //   },
+      //   tyres: ['a', 'b', 'c', 'd'],
+      //   showTyreList: function() {
+      //     let that = this;
+      //     this.tyres.forEach(function(eachTyre) {
+      //       console.log(`${eachTyre}:${that.brand}`);
+      //     });
+
+      //   }
+      // }
+      // car.showTyreList();
+
+      //solution 3: using the thisArg in forEach
+
+      // const car = {
+      //   brand: 'Hyundai',
+      //   noOfTyres: 4,
+      //   start: function() {
+      //     console.log('started', this.brand);
+      //   },
+      //   tyres: ['a', 'b', 'c', 'd'],
+      //   showTyreList: function() {
+      //     this.tyres.forEach(function(eachTyre) {
+      //       console.log(`${eachTyre}:${car.brand}`);
+      //     }, this);
+
+      //   }
+      // }
+      // car.showTyreList();
+
+      //solution 4:using bind
+
+      // const car = {
+      //   brand: 'Hyundai',
+      //   noOfTyres: 4,
+      //   start: function() {
+      //     console.log('started', this.brand);
+      //   },
+      //   tyres: ['a', 'b', 'c', 'd'],
+      //   showTyreList: function() {
+      //     this.tyres.forEach(function(eachTyre) {
+      //       console.log(`${eachTyre}:${this.brand}`);
+      //     }.bind(this));
+
+      //   }
+      // } car.showTyreList();
+
+      //solution 5: using arrow functions
+
+      // const car = {
+      //   brand: 'Hyundai',
+      //   noOfTyres: 4,
+      //   start: function() {
+      //     console.log('started', this.brand);
+      //   },
+      //   tyres: ['a', 'b', 'c', 'd'],
+      //   showTyreList: function() {
+      //     this.tyres.forEach(eachTyre => {
+      //       console.log(`${eachTyre}:${anotherBrand.brand}`);
+      //     });
+
+      //   },
+      // };
+      // let anotherBrand = {
+      //   brand: 'Audi',
+      // };
+      // car.showTyreList();
+
+
+      // const car = {
+      //   brand: 'Hyundai',
+      //   noOfTyres: 4,
+      //   start: function() {
+      //     console.log('started', this.brand);
+      //   },
+      //   tyres: ['a', 'b', 'c', 'd'],
+      //   showTyreList: function() {
+
+      //     this.tyres.forEach(insideForeach);
+
+      //   },
+      // };
+      // let insideForeach = eachTyre => {
+      //   console.log(`${eachTyre}:${anotherBrand.brand}`);
+      // };
+
+      // function sample() {
+      //   console.log('sample', this);
+      // };
+
+      // let anotherBrand = {
+      //   brand: 'Audi',
+      // };
+      // car.showTyreList();
+
+
+      // function createPerson() {
+      //   this.gender = 'male';
+      //   return {
+      //     firstName: 'ram',
+      //     lastName: 'guptha',
+
+      //     fullName: function() {
+      //       return this.firstName + this.lastName;
+      //     },
+      //   }
+      // }
+
+      // const personThree = new createPerson();
+      // console.log(personThree);
+
+
+      // function Person() {
+      //   this.firstName = 'ram',
+      //     this.lastName = 'guptha',
+      //     this.fullName = function() {
+      //       return this.firstName + this.lastName;
+      //     }
+      // }
+
+      // const personTwo = new Person();
+      // console.log(personTwo);
+
+
+      // function Classroom(roomNo, strengthOfStudents) {
+      //   this.roomNumber = roomNo;
+      //   this.sudentsStrength = 0;
+      //   this.sessionStatus = 'teaching';
+      //   this.fanStatus = 'on';
+      //   this.areAcsRunning = false;
+      //   this.isSoundSystemOn = false;
+      //   this.switchOnPowerEquipment = function() {
+      //     this.areAcsRunning = 'false';
+      //   }
+      //   this.stopTeaching = function() {
+      //     this.soundSystem = 'false';
+      //   }
+      // }
+
+      // class ClassroomEs6 {
+      //   constructor(roomNumber, studentstrength) {
+      //     this.roomNumber = roomNumber;
+      //     this.studentsStrength = studentstrength;
+      //   }
+      //   switchOnPowerEquipment() {
+      //     this.areAcsRunning = true;
+      //     this.fansStatus = 'On';
+      //     this.isSoundSystemOn = 'true';
+      //     return this.switchOnPowerEquipment;
+      //   }
+      //   static sayHello() {
+      //     return ("Say hello static");
+      //   }
+
+      // }
+
+      // const es6ClassRoomObj = new ClassroomEs6(3, 57);
+
+      // console.log(ClassroomEs6.sayHello());
+
+
+      class Account {
+        constructor(holderName, holderBranchName, holderAccountNumber, holderIfscCode) {
+          this.name = holderName;
+          this.branchName = holderBranchName;
+          this.accountNumber = holderAccountNumber;
+          this.ifscCode = holderIfscCode;
+        }
+      }
+      class SavingsAccount extends Account {
+        constructor(holderName, holderBranchName, holderAccountNumber, holderIfscCode, remainingBalance, Interestrate) {
+          super(holderName, holderBranchName, holderAccountNumber, holderIfscCode);
+          this.balance = remainingBalance;
+          this.interestRate = Interestrate;
+        }
+      }
+
+      class CurrentAccount extends SavingsAccount {
+        constructor(holderName, holderBranchName, holderAccountNumber, holderIfscCode, remainingBalance, Interestrate, OverDraft) {
+          super(holderName, holderBranchName, holderAccountNumber, holderIfscCode, remainingBalance, Interestrate);
+
+          this.overDraftAmount = OverDraft;
+        }
+      }
+
+      class LoanAccount extends Account {
+        constructor(holderName, holderBranchName, holderAccountNumber, holderIfscCode, LoanAmount, Loanduration) {
+          super(holderName, holderBranchName, holderAccountNumber, holderIfscCode);
+          this.loanAmount = LoanAmount;
+          this.loanDurationInMonths = Loanduration;
+        }
+      }
+
+
+
+      let accountObject = new CurrentAccount('Harika', 'Guntur', '12345563425', 'SBIN3467886', '1,00,000', '0.2%', '20,000');
+
+
+      console.log(accountObject);
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="todo-list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+
+    <div id="toDoListApp">
+      <p id="toDoTextOnTop">todos</p>
+      <div id="outerDiv">
+        <div id="inputTakingDiv">
+          <div id="onlyPtagAndInput">
+             <p id="arrowTag"><i class="fa fa-angle-down" style="font-size:48px;color:grey"></i></p>
+          <input type="text" id="showToDoItemsInput" placeholder="What needs to be done? " />
+          </div>
+          <ul id="toDisplayTheContent"></ul>
+        </div>
+        <div id="actionsOfTheItems" disabled="false">
+          <button id="countDisplay">items left</button>
+          <div id="threeActionItems">
+            <button id="allTextContent">All</button>
+            <button id="activeTextContent">Active</button>
+            <button id="completedtextContent">Completed</button>
+          </div>
+          <button id="clearCompletedContent">Clear Completed</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src=" todo-list.js "></script>
+
+  </body>
+
+</html>

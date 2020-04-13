@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+
+    <div id='atmApp'>
+      <div class="two-rows">
+        <div id="firstRow">
+          <button id="deposit" class="same-style">Deposit</button>
+          <button id='withDraw' class="same-style">Withdraw</button>
+        </div>
+        <div id="secondRow">
+          <button id="showBalance" class="same-style">Show Balanace</button>
+          <button id="history" class="same-style">History</button>
+        </div>
+      </div>
+
+      <div id="displayResult">
+        <div id="forSpan">
+          <input type="text" id="displayInputText" />
+          <button type="button" id="submitButton" class="same-style">Submit</button>
+
+        </div>
+        <p id='displayPTagText'></p>
+
+        <span id="errorDisplay"></span>
+        <div id="forTable"></div>
+        <div id="forTimer"></div>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            #backColor {
+                background-color: #00aa9d;
+                border-radius: 3px;
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                transition: transform 0.8s;
+                margin-top: 5%;
+            }
+
+            #transition {
+                background-color: #2b3f53;
+                border-radius: 3px;
+                height: 150px;
+                width: 150px;
+                margin-top: 5%;
+                transition: transform 0.8s;
+                position: absolute;
+            }
+
+            .active {
+                transform: translate(150px, 150px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="backColor"></div>
+        <div id="transition"></div>
+        <script>
+            const transitionEl = document.getElementById('transition');
+            document.ontouchstart = () => {
+                transitionEl.classList.add('active');
+            };
+            document.ontouchend = () => {
+                transitionEl.classList.remove('active');
+            };
+        </script>
+    </body>
+
+</html>

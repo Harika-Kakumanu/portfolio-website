@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+    <div id="outerColors">
+      <p class="alreadyAccount" id="colorsElement">Select your favourite colors:
+        <input type="color" onchange=changeColor() id="firstColor" value="#33ccff" />
+        <input type="color" onchange=changeColor() id="secondColor" value="#ff99cc" />
+      </p>
+      <div id="validationForm">
+        <h1>Sign Up</h1>
+        <h4>Please fill in this form to create an Account!</h4>
+
+        <div id="validationStarts">
+          <form name="form">
+            <div>
+              <span id="spanFirstName"></span>
+            </div>
+            <div>
+              <span id="spanLastName"></span>
+            </div>
+
+
+
+            <div id="namesDiv">
+              <input type="text" id="firstName" class="color" placeholder="First Name" />
+              <input type="text" id="lastName" class="color" placeholder="Last Name" /><br>
+            </div>
+
+
+            <span id="spanMobileNo"></span>
+            <input type="text" id="mobileNumber" class="color" placeholder="Mobile Number" /><br>
+
+
+            <span id="spanEmail"></span>
+            <input type="email" id="email" class="color" placeholder="Email" required/><br>
+
+            <span id="spanPassword"></span>
+            <input type="password" id="password" class="color" placeholder="Password" required/><br>
+
+            <span id="spanConfirmPwd"></span>
+            <input type="password" id="confirmPassword" class="color" placeholder="Confirm Password" required/><br>
+
+            <span id="spanGender"></span>
+            <div id="genderDiv" class="space">
+              <label>Select your gender :</label>
+              <input type="radio" id="male" name="gender" value='male' />
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" value='female' />
+              <label for="female">Female</label>
+
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Other</label>
+
+            </div>
+
+
+            <div id="branchDobDiv " class="space">
+              <label>Select your branch : 
+              <select class="color" id="selectBranches">
+                <option value="cse" selected>CSE</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="civil">Civil</option>
+              </select>
+              </label>
+
+              <span id="spanDob"></span>
+              <label for="dob">DOB : 
+              <input type="date" id="dateOfBirth" name="dob" placeholder="dd/mm/yyyy" min="2002/12/31"/></label><br>
+            </div>
+
+            <label for="address">Enter your address here:
+            <input type="text" id="address" class="space" name="address" /></label><br>
+
+            <label for="typingSpeed">Set your typing speed:
+            <input type="range" id="range" class="space"/></label><br>
+
+            <span id="spanCheckbox"></span>
+            <input type="checkbox" id="inputCheckbox" />
+            <label class="space">I accept the <span class="spanPrivacy">Terms of use</span>&<span class="spanPrivacy">Privacy Policy</span><br>
+            </label>
+            <button type="button" id="signUp">Signup</button>
+          </form>
+        </div>
+      </div>
+      <p class="alreadyAccount">Already have an Account?
+        <a>Login here</a>
+      </p>
+    </div>
+
+
+    <script src=" sign-up.js "></script>
+
+  </body>
+
+</html>

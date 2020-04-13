@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script>
+      // function Person(firstName, lastName) {
+      //   this.firstName = firstName;
+      //   this.lastName = lastName;
+      // }
+      // Person.getFullName=function(){
+
+      // }
+
+      //c const member = new Person('ibhubs', 'ibcricket');
+      // member.getFullname = function() {
+      //   return `${this.firstName} ${this.lastName}`;
+      // }
+      //console.log(member.getFullname());
+
+
+
+      // class Person {
+      //   constructor(firstName, lastName) {
+      //     this.firstName = firstName;
+      //     this.lastName = lastName;
+      //   }
+
+      //   static getFullName() {
+      //     console.log('Person');
+      //     return `${this.firstName} ${this.lastName}`;
+      //   }
+      // };
+      // const member = new Person('ibhubs', 'ibcricket');
+
+      // member.getFullName = function() {
+      //   console.log('member');
+      //   return `${this.firstName} ${this.lastName}`;
+      // }
+
+      //Person.firstName = 'Harika';
+      // Person.lastName = 'Kakumanu';
+      //
+      // console.log(member.getFullname());
+
+      // console.log(member.getFullName());
+
+      // console.log('first Statement');
+      // let userDetails;
+      // getUserDetails(1, function(userDetails) {
+      //   console.log("user details", userDetails);
+      // });
+
+      // console.log('last Statement');
+
+      // function getUserDetails(id, callbac) {
+
+      //   setTimeout(() => {
+
+      //     console.log('facebook user');
+      //     callbac({ id: id, userName: 'jack' });
+
+      //   }, 1000);
+
+      // }
+
+
+      // let imgtag = document.createElement('img');
+      // imgtag.setAttribute('src', 'static/Hobbies/music-player/music-player.png');
+      // imgtag.setAttribute('id', 'imgTag');
+      // let div1 = document.createElement('div');
+      // div1.setAttribute('id', 'divTag');
+      // div1.appendChild(imgtag);
+
+      // document.getElementById('imgTag').onload = () => {
+      //   console.log('image loaded');
+      // }
+      // console.log(imgtag);
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<call back Hell function>>>>>>>>>>>>>>>>>>>>>>>>>
+      // function loadImage(url, onSuccessLoadImage) {
+      //   const imge1 = document.createElement('img');
+
+      //   imge1.onload = () => {
+      //     console.log(`${url} image is loaded`);
+      //     onSuccessLoadImage(imge1);
+      //   };
+      //   setTimeout(() => {
+      //     imge1.src = url;
+      //   }, 1000);
+      // }
+      // loadImage('../static/Hobbies/music-player/music-player.png', (imge1) => {
+      //   document.body.appendChild(imge1);
+      //   console.log('image 1 is appended to body');
+
+      //   loadImage('../static/Hobbies/cricket-player/cricket-player.png', (imge1) => {
+      //     document.body.appendChild(imge1);
+      //     console.log('image 2 is appended to body');
+      //   })
+      // });
+
+
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<promise>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+      // function loadImageWithPromise(url) {
+      //   return new Promise(() => {
+      //     const imge1 = document.createElement('img');
+      //     imge1.onload = () => {
+      //       console.log(`${url} is loaded`);
+      //     };
+      //     setTimeout(() => {
+      //       imge1.src = url;
+      //     }, 3000);
+      //     document.body.appendChild(imge1);
+      //   });
+      // }
+      // loadImageWithPromise('../static/Hobbies/open-book/open-book.png');
+
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<promise chaining>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      // function loadImageWithPromise(url) {
+      //   return new Promise((resolv) => {
+      //     const imge1 = document.createElement('img');
+      //     imge1.onload = () => {
+      //       //  console.log(`${url} is loaded`);
+      //       resolv(imge1);
+
+      //       // console.log(`firstimg ${imge1}`);
+      //     };
+      //     setTimeout(() => {
+      //       imge1.src = url;
+      //     }, 1000);
+
+      //   });
+      // }
+      // loadImageWithPromise('../static/Hobbies/open-book/open-book.png').then(response => {
+      //     console.log(response);
+      //     document.body.appendChild(response);
+      //     return loadImageWithPromise('../static/Hobbies/cricket-player/cricket-player.png');
+      //   })
+      //   .then(response => {
+      //     console.log('second', response);
+      //     document.body.appendChild(response);
+      //     return loadImageWithPromise('../static/Hobbies/music-player/music-player.png');
+      //   });
+
+
+      //  const secondImg = firstImg.then(
+      //   response => {
+
+      //document.body.appendChild(response);
+
+      //return loadImageWithPromise('../static/Hobbies/cricket-player/cricket-player.png');
+
+      // return new Promise((resolve) => {
+      //   resolve(2 + 3);
+      // })
+
+      // return "random";
+
+      //  return loadImageWithPromise('../static/chess.png');
+
+      // return undefined;
+
+
+      // return new Promise(resolveFn => {
+      //   setTimeout(() => {
+      //     resolveFn('Random4')
+      //   }, 4000);
+
+      // })
+      // console.log(`secondImg ${response}`);
+
+      //   });
+
+
+      //    console.log(`secondImg ${secondImg}`);
+
+
+
+
+      // const thirdImg = secondImg.then(response => {
+      //   console.log(`third img ${response}`);
+      //   // document.body.appendChild(response);
+      //   //return loadImageWithPromise('../static/Hobbies/open-book/open-book.png');
+      // });
+
+
+
+
+
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<reject with catch>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      // function loadImageWithPromise(url) {
+      //   return new Promise((resolv, reject) => {
+      //     const imge1 = document.createElement('img');
+      //     imge1.onload = () => {
+      //       resolv(imge1);
+      //     };
+
+      //     //Random4();
+      //     //throw 'image is not loaded';
+      //     reject(new Error('image is not loaded'));
+      //     console.log('called or not');
+
+      //     setTimeout(() => {
+      //       imge1.src = url;
+      //     }, 1000);
+
+      //   });
+      // }
+
+      // loadImageWithPromise('../static/Hobbies/open-book/open-book.png')
+      //   .then(response => {
+      //     console.log(response);
+      //     document.body.appendChild(response);
+      //     return loadImageWithPromise('../static/Hobbies/cricket-player/cricket-player.png');
+      //   })
+      //   .catch(e => {
+      //     console.log(e, 'error throwed');
+      //     return 5;
+      //   }).then((response) => {
+      //     console.log(response);
+      //   })
+
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<chaining with catch>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      // let p1 = new Promise(function(resolve, reject) {
+      //   resolve('resolve new Promise');
+      // })
+
+      // p1.then(function(response) {
+      //     console.log(response);
+      //     //  throw 'error in p1.then';
+      //     return Promise.reject('error');
+      //   }).catch(function(e) {
+      //     console.log(e);
+      //   }).then(function() {
+      //     console.log('after the catch ,the then fucntion is written');
+      //   }),
+      //   function() {
+      //     console.log('not fired due to the catch');
+      //   }
+
+
+      // var p1 = new Promise(function(resolve, reject) {
+      //   throw new Error('Uh-oh!');
+      // });
+
+      // p1.catch(function(e) {
+      //   console.log(e); // "Uh-oh!"
+      // });
+
+      // Errors thrown inside asynchronous functions will act like uncaught errors
+      // var p2 = new Promise(function(resolve, reject) {
+      //   setTimeout(function() {
+      //     throw 'Uncaught Exception***';
+      //   }, 1000);
+      // });
+      // window.addEventListener("unhandlesrejection", (event) => {
+      //   console.log(event);
+      // })
+      // p2.catch(function(e) {
+      //   console.log('error', e); // This is never called
+      // });
+
+      // var p1 = Promise.resolve("calling next");
+
+      // var p2 = p1.catch(function(reason) {
+      //   //This is never called
+      //   console.error("catch p1!");
+      //   console.error(reason);
+      // });
+
+      // p2.then(function(value) {
+      //   console.log("next promise's onFulfilled"); /* next promise's onFulfilled */
+      //   console.log(value); /* calling next */
+      // }, function(reason) {
+      //   console.log("next promise's onRejected");
+      //   console.log(reason);
+      // });
+
+
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Async and await>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      // function loadImageWithPromise(url) {
+      //   return new Promise((resolv) => {
+      //     const imge1 = document.createElement('img');
+      //     imge1.onload = () => {
+      //       resolv(imge1);
+      //     };
+      //     setTimeout(() => {
+      //       imge1.src = url;
+      //     }, 1000);
+
+      //   });
+      // }
+
+      // async function getAllImages() {
+      //   try {
+      //     console.log('first statement');
+      //     const firstImage = await loadImageWithPromise('../static/Hobbies/cricket-player/cricket-player.png');
+      //     console.log(firstImage);
+      //     document.body.appendChild(firstImage);
+      //     throw 'not loaded';
+      //     const secondImage = await loadImageWithPromise('../static/Hobbies/open-book/open-book.png');
+      //     document.body.appendChild(secondImage);
+      //     console.log('last statement');
+
+      //   }
+
+      //   catch (e) {
+      //     console.log(e);
+      //   }
+      // }
+      // getAllImages();
+      // console.log('hi');
+
+
+      //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<fetch >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+      fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(response => {
+          //console.log(response)
+          return response.json();
+        })
+        .then(json => {
+          console.log(json);
+        });
+    </script>
+  </body>
+
+</html>

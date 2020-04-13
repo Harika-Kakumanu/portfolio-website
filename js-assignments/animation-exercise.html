@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            #container {
+                position: absolute
+            }
+
+            #outerDiv {
+                display: flex;
+                margin: 150px auto;
+                width: 400px;
+
+                height: 200px;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+            }
+
+            #red {
+                display: flex;
+                background-color: red;
+                transform-origin: left top;
+                transition: transform 1s;
+            }
+
+            #violet {
+                background-color: violet;
+                transform-origin: bottom left;
+                transition: transform 1s;
+
+            }
+
+
+            #yellow {
+                background-color: yellow;
+                transform-origin: top right;
+                transition: transform 1s;
+            }
+
+
+            #green {
+                background-color: green;
+                transform-origin: bottom right;
+                transition: transform 1s;
+            }
+
+            .active1 {
+                transform: rotate(90deg);
+            }
+
+            .active2 {
+                transform: rotate(-90deg);
+            }
+
+            #message {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+
+                width: 400px;
+                height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="message">
+                <p>HI!..</p>
+            </div>
+
+            <div id="outerDiv">
+
+                <div>
+                    <div id="red"></div>
+                    <div id="violet"></div>
+                </div>
+                <div>
+                    <div id="yellow"> </div>
+
+                    <div id="green"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const transitionE1 = document.getElementById('red');
+            const transitionE2 = document.getElementById('violet');
+            const transitionE3 = document.getElementById('yellow');
+            const transitionE4 = document.getElementById('green');
+            document.ontouchstart = () => {
+                transitionE1.classList.add('active1');
+                transitionE2.classList.add('active2');
+                transitionE3.classList.add('active2');
+                transitionE4.classList.add('active1');
+            };
+            document.ontouchend = () => {
+                transitionE1.classList.remove('active1');
+                transitionE2.classList.remove('active2');
+                transitionE3.classList.remove('active2');
+                transitionE4.classList.remove('active1');
+            };
+        </script>
+    </body>
+
+</html>

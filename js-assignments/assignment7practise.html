@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        <script>
+            //----------------------------Question-1--------------------------------
+            function checkTheString(arrayInput) {
+                return arrayInput.filter(word => word.startsWith("t") || word.endsWith("r"));
+            }
+            console.log(checkTheString(["dream", "player", "read", "write", "trend"]));
+            console.log(checkTheString(["teacher", "friend", "cricket", "farmer", "rose", "talent", "trainer"]));
+            //----------------------------Question-2--------------------------------
+
+            function uniqueCharacter(stringInput) {
+                return stringInput.split("").filter(checkingIndex);
+            }
+
+            function checkingIndex(item, index, stringInput) {
+                return stringInput.indexOf(item) === index;
+            }
+            console.log(uniqueCharacter('Was it a cat I saw ?'));
+            //----------------------------Question-3--------------------------------
+            let array3 = ["Cyber Security", "Data Analytics", "Blockchain", "IoT"];
+            console.log(array3.map(word => word.toUpperCase()));
+            //----------------------------Question-4--------------------------------
+            let array4 = [5, 1, 9, 6, 15];
+            // console.log(array4.map(element, index => console.log(index))); // =>index%2===0 element * element));
+            console.log(array4.map(alternativeItems));
+
+            function alternativeItems(item, index) {
+                return (index % 2 === 0) ? (item * item) : item;
+            }
+            //----------------------------Question-5--------------------------------
+            //let array5 = ["5", 1, "9", "6", "15"];
+            let array5 = ["i", "B", "H", "u", "b", "s"]
+            let count = 0;
+            // let result = array5.forEach(item => typeof(item) === "string");
+            let result = array5.forEach(item);
+
+            function item(itemName) {
+                if (typeof(itemName) === "string") {
+                    count = count + 1;
+                }
+            }
+            console.log(count === array5.length ? true : false);
+
+            //----------------------------Question-6--------------------------------
+            // let array6 = ["Telugu", "Kannada", "Malayalam", "Tamil"];
+            let array6 = ["Hey", "Hello", "Hi"];
+            let count1 = 0;
+            let checkArray = array6.forEach(checkArrayFunction);
+
+            function checkArrayFunction(word) {
+                word = word.toLowerCase();
+                let reverseWord = word.split("").reverse().join("");
+                if (reverseWord === word) {
+                    count1 = count1 + 1;
+                }
+            }
+            console.log(count1 >= 1 ? true : false);
+            //----------------------------Question-7--------------------------------
+            function findString(givenArray, stringCharacter, stringLength) {
+                return givenArray.find(word => word.startsWith(stringCharacter) && word.length === stringLength);
+            }
+            console.log(findString(["Telugu", "Kannada", "Malayalam", "Tamil"], "T", 5));
+            console.log(findString(["birch", "maple", "bonsai", "oak", "poplar"], "b", 5));
+            console.log(findString(["Madhu", "Madhavi", "Madhuri", "Manesha"], "Madh", 7));
+            //----------------------------Question-8--------------------------------
+            let trees = [
+                { name: "birch", count: 10, type: "outdoor" },
+                { name: "maple", count: 7, type: "indoor/outdoor" },
+                { name: "peace lilly", count: 6, type: "indoor" },
+                { name: "oak", count: 2, type: "outdoor" },
+                { name: "lucky bamboo", count: 7, type: "indoor" }
+            ];
+            console.log(trees.find(item => item['count'] > 6 && item['type'] === 'indoor'));
+        </script>
+    </body>
+
+</html>

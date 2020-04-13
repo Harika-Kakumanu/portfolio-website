@@ -1,0 +1,24 @@
+Objective: 
+* Develop an Posts app by considering below use cases
+* Follow the below standards during development
+
+v1 - use cases:
+
+* User should be able to view a list of posts
+* User should be able to see the post title and post body for each post
+
+Note: 
+* Use below URL to fetch posts:
+    - https://jsonplaceholder.typicode.com/posts
+
+Follow the below standards:
+
+* All javascript function names and variable names should be in camel case (Ex: firstName)
+* All ids should be camel case
+* All CSS class names should be hyphenated(Ex: form-input)
+* Keep meaningful names (Ex: Don't use a,b,c,ab,bc,x,y,z...etc)
+* Do less DOM operations as they impact performance
+* Don't use inline styles, only use classes
+* Use let if the variable changes, Use const if the variable won't change, Don't use var.
+* Save constants on the top of the javascript file(Ex: Regular expressions, DOMElement variables)
+* An id attribute should be unique and should be given to single element in the entire HTML

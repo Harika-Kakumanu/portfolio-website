@@ -1,0 +1,19 @@
+.outer-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.input-class{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:3%;
+    width:450px;
+    height:55px;
+    font-size:25px;
+    box-shadow:2px 2px 2px 2px;
+    border:2px solid lightgrey;
+    
+}

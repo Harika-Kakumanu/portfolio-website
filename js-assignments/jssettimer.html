@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <style>
+      /*#ui-button1,*/
+
+      /*#ui-button2 {*/
+
+      /*  margin-top: 14%;*/
+
+      /*  margin-left: 15%;*/
+
+      /*  width: 150px;*/
+
+      /*  height: 50px;*/
+
+      /*  font-size: 15px;*/
+
+      /*  background-color: green;*/
+
+      /*  border-radius: 4px;*/
+
+      /*  color: white;*/
+
+      /*}*/
+    </style>
+    <style>
+      /*#divTag {*/
+
+      /*  margin-top: 10%;*/
+
+      /*  margin-left: 10%;*/
+
+      /*  padding-top: 10%;*/
+
+      /*  width: 200px;*/
+
+      /*  height: 100px;*/
+
+      /*  font-size: 50px;*/
+
+      /*  background-color: black;*/
+
+      /*  color: green;*/
+
+      /*  text-align: center;*/
+
+      /*}*/
+
+      /*#displayText {*/
+
+      /*  font-size: 50px;*/
+
+      /*  color: dodgerblue;*/
+
+      /*  text-align: center;*/
+
+      /*}*/
+    </style>
+
+    <style>
+      #outerBox {
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .styleClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        font-size: 30px;
+      }
+
+      .button-class {
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        color: white;
+        background-color: dodgerblue;
+        border-radius: 5px;
+        margin-top: 10%;
+      }
+
+      #buttons {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+    <!--<button id="ui-button1">Change button color</button>-->
+    <!--<button id="ui-button2">Cancel</button>-->
+
+    <script>
+      // const uiButton = document.getElementById('ui-button1')
+      // const uiCancel = document.getElementById('ui-button2');
+      // let setTimerId = [];
+
+
+      // uiButton.onclick = function() {
+
+      //   uiButton.style.backgroundColor = "dodgerblue";
+      //   let setTimerId1 = setTimeout(() => {
+      //     uiButton.style.backgroundColor = "black";
+      //   }, 3000);
+      //   setTimerId.push(setTimerId1);
+      // }
+      // uiCancel.onclick = function() {
+      //   console.log(setTimerId);
+      //   //if (setTimerId !== undefined) {
+      //   setTimerId.forEach((id) => clearTimeout(id));
+      //   setTimerId = [];
+      //   //}
+      // }
+    </script>
+
+    <!--<p id="changeName"> Harika</p>-->
+    <script>
+      // setTimeout(() => {
+      //   document.getElementById('changeName').innerHTML = 'Harika Kakumanu'
+      // }, 2000)
+    </script>
+
+    <!--<div id="divTag"> </div>-->
+    <!--<p id="displayText"></p>-->
+
+
+
+    <script>
+      // let value = 10;
+      // let timer;
+      // let divDom = document.getElementById('divTag');
+      // let displayGreetings = document.getElementById('displayText');
+
+      // function countDown() {
+      //   divDom.innerHTML = value;
+      //   if (value === 0) {
+      //     stopTimer();
+      //   }
+      //   value = value - 1;
+      // }
+
+      // function startTimer() {
+      //   timer = setInterval(countDown, 100);
+      // }
+
+      // function stopTimer() {
+
+
+
+      //   divDom.style.display = none;
+      //   displayGreetings.innerHTML = "Happy Holi";
+      //   cleanInterval(timer);
+      // }
+      // startTimer();
+    </script>
+
+    <div id="outerBox">
+      <div id="rgbBox1" style=background-color:red class="styleClass">R</div>
+      <div id="rgbBox2" class="styleClass">G</div>
+      <div id="rgbBox3" class="styleClass">B</div>
+    </div>
+    <div id="buttons">
+      <button id="cancelButton" class="button-class">Cancel</button>
+      <button id="resumeButton" class="button-class">Resume</button>
+
+    </div>
+
+    <script>
+      let rgb1 = document.getElementById('rgbBox1');
+      let rgb2 = document.getElementById('rgbBox2');
+      let rgb3 = document.getElementById('rgbBox3');
+      let clearButton = document.getElementById('cancelButton');
+      let resumeButton = document.getElementById('resumeButton');
+      let timeOutArray = [];
+      let timeInterval = '';
+
+      timeInterval = setInterval(() => {
+        timeOutArray.push(setTimeout(() => { greenColor() }, 1000));
+        timeOutArray.push(setTimeout(() => { blueColor() }, 2000));
+        timeOutArray.push(setTimeout(() => { redColor() }, 3000));
+      }, 3000);
+
+      function greenColor() {
+        rgb2.style.backgroundColor = 'green';
+        rgb2.style.color = 'white';
+        rgb1.style.backgroundColor = 'white';
+        rgb3.style.backgroundColor = 'white';
+        rgb1.style.color = 'black';
+      }
+
+      function blueColor() {
+        rgb2.style.color = 'black';
+        rgb2.style.backgroundColor = 'white';
+        rgb1.style.backgroundColor = 'white';
+        rgb3.style.backgroundColor = 'blue';
+        rgb3.style.color = 'white';
+      }
+
+      function redColor() {
+        rgb1.style.backgroundColor = 'red';
+        rgb2.style.backgroundColor = 'white';
+        rgb3.style.backgroundColor = 'white';
+        rgb3.style.color = 'black';
+        rgb1.style.color = 'white';
+      }
+
+
+
+      resumeButton.onclick = (event) => {
+        timeInterval = setInterval(() => {
+          timeOutArray.push(setTimeout(() => { greenColor() }, 1000));
+          timeOutArray.push(setTimeout(() => { blueColor() }, 2000));
+          timeOutArray.push(setTimeout(() => { redColor() }, 3000));
+        }, 3000);
+
+      }
+
+      clearButton.onclick = (event) => {
+        clearInterval(timeInterval);
+        timeOutArray.forEach(item => clearTimeout(item));
+      }
+    </script>
+
+
+  </body>
+
+</html>

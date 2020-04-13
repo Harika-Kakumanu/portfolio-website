@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script>
+      // try {
+      //   function increaseCount() {
+      //     let count = 0;
+      //     if (true) {
+      //       let anotherCount = 0;
+      //       console.log("this is an if block");
+      //     }
+      //     console.log(anotherCount);
+      //   }
+      //   increaseCount();
+      // }
+      // catch (e) {
+      //   console.log(e);
+      // }
+
+
+      // function counter() {
+      //   const count = 0;
+      //   count = count + 1;
+      //   console.log(count);
+      // }
+      // try {
+      //   counter();
+      //   counter();
+      //   counter();
+      // }
+      // catch (e) {
+      //   console.log(e);
+      // }
+
+
+      // try {
+      //   let names = ['jack', 'john']; //why we getting error while we writing the array in try block
+      //   function printNames() {
+      //     for (let i = 0; i < names.length; i++) { //var is a function scope value...
+      //       console.log(names[i]);
+      //     }
+      //     console.log('index', i);
+      //   }
+      //   printNames();
+      // }
+      // catch (e) {
+      //   console.log(e);
+      // }
+
+
+      // try {
+      //   console.log(person);
+      //   let person = "jack"; //we get error
+      // }l
+      // catch (e) {
+      //   console.log(e);
+      // }
+
+
+      // try {
+      //   console.log(person);
+
+      //   var person = "jack"; //we get undefined because when var is hoisting ,the var is directly intialzed when it go to the  top of the console.
+      // }
+      // catch (e) {
+      //   console.log(e);
+      // }
+
+
+      // var name = "jack";
+    </script>
+    <script>
+      //console.log(name);
+
+
+      // let name = 'jack';
+      // console.log(name);
+
+      // let secondName = name;
+      // console.log(secondName);
+
+      // name = 'john';
+      // console.log(name);
+      // console.log(secondName);
+
+
+      // let person = {
+      //   name: 'jack',
+      //   place: 'houtson'
+      // };
+
+      // function changePerson(person) {
+      //   person.place = 'santa Clara';
+      // }
+      // changePerson(person);
+      // console.log(person);
+
+      // let hobbies = ['coding', 'cooking', 'tennis', 'cricket'];
+      // let myhobbies = hobbies;
+      // hobbies.push('dancing');
+      // console.log(hobbies);
+      // console.log(myhobbies);
+
+
+      // let person = {
+      //   name: 'jack',
+      //   place: 'houtson',
+      // };
+
+      // function createPerson(person) {
+      //   let secondPerson = {};
+      //   for (let key in person) {
+      //     secondPerson[key] = person[key];;
+      //   }
+      //   secondPerson.place = 'Santa Clara';
+      //   return secondPerson;
+      // }
+      // let secondPerson = createPerson(person);
+      // console.log(secondPerson);
+      // console.log(person);
+
+
+
+      // let person = {
+      //   name: 'jack',
+      //   place: 'houtson',
+      // };
+
+      // console.log(person);
+      // let secondPerson = Object.assign({}, person);
+      // console.log(secondPerson);
+      // person.place = 'Santa Clara';
+      // console.log(person);
+      // console.log(secondPerson);
+
+      // let reaction = 'yikes';  
+      // reaction[0] = 'l';           //strings are immutable
+      // console.log(reaction[0]);
+      // console.log(reaction);
+
+
+      // let hobbies = ['coding', 'cooking', 'tennnis', 'cricket'];
+      // console.log(hobbies);
+      // hobbies.slice(0, 2);
+      // console.log(hobbies);
+
+
+      // let names = ['jack', 'john'];
+      // try {
+      //   function printNames() {
+      //     for (const i = 0; i < names.length; i++) {
+      //       console.log(names[i]);
+      //     }
+      //   }
+
+      //   printNames();
+      // }
+      // catch (e) {
+      //   console.log(e);
+      // }
+
+let person = {
+        name: 'jack',
+        place: 'houston',
+        hobbies: ['tennis', 'cricket'],
+      };
+      console.log(person);
+      let secondPerson = Object.assign({}, person);
+      console.log(secondPerson);
+      person.hobbies.push('coding');
+      console.log(person);
+      console.log(secondPerson);
+    </script>
+  </body>
+
+</html>

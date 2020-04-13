@@ -1,0 +1,72 @@
+body {
+    background-color: lightgrey;
+}
+
+#carClass {
+    display: none;
+    margin-top: 5%;
+    width: 430px;
+    height: 200px;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 4%;
+}
+
+#startButton {
+    display: inline;
+    background-color: green;
+    position: relative;
+}
+
+.start-and-stop {
+    width: 80px;
+    height: 45px;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 6px;
+
+}
+
+#stopButton {
+    display: none;
+    background-color: red;
+}
+
+
+#accelerateAndDecelerte {
+    display: flex;
+    justify-content: space-between;
+}
+
+#accelerateButton {
+    width: 100px;
+    height: 45px;
+    color: #adebeb;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #adebeb;
+}
+
+#decelerateButton {
+    width: 100px;
+    height: 45px;
+    color: #ff9999;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #ff9999;
+}
+
+#addCar {
+    margin-top: 3%;
+    width: 100px;
+    height: 45px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}

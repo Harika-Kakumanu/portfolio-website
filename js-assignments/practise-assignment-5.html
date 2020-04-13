@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+        <p id="p1">Hello world</p>
+        <p id="p2">HEllo World</p>
+        <script>
+            //----------------------------------Question1-----------------
+            // function getHighestNumber(value1, value2) {
+            //     if (value1 > value2) {
+            //         return value1;
+            //     }
+            //     else {
+            //         return value2;
+            //     }
+            // }
+            // alert(getHighestNumber(22, 33));
+
+            //-----------------------------------Question2------------------
+            // function getLowestNumber(value1, value2) {
+            //     if (value1 < value2) {
+            //         return value1;
+            //     }
+            //     else {
+            //         return value2;
+            //     }
+            // }
+            // alert(getLowestNumber(22, 33));
+
+            //-----------------------------Question3-----------------
+            // function guidePedestrian(input) {
+            //     switch (input) {
+            //         case 'red':
+            //             alert('Do not cross');
+            //             break;
+            //         case 'green':
+            //             alert('Safe to cross');
+            //             break;
+            //         case 'orange':
+            //             alert('Cross when it is safe');
+            //             break;
+            //         default:
+            //             alert('Hola! You are not in the junction');
+            //     }
+            // }
+            // guidePedestrian('red');
+            // guidePedestrian('orange');
+            // guidePedestrian('green');
+            // guidePedestrian('pink');
+
+            //-----------------------Question-4-----------------
+            // function checkEqualityOfTwoNumbers(value1, value2) {
+            //     if (value1 == value2) {
+            //         alert('Both are equal');
+            //     }
+            //     else {
+            //         alert('Not equal');
+            //     }
+            // }
+            // checkEqualityOfTwoNumbers(22, 33);
+            // checkEqualityOfTwoNumbers(33, 33);
+
+            //--------------------question5--------------------
+            // function isPositiveNumber(value) {
+            //     if (value <= 0) {
+            //         alert('False');
+            //     }
+            //     else {
+            //         alert('True');
+            //     }
+            // }
+            // isPositiveNumber(-1);
+            // isPositiveNumber(99);
+            // isPositiveNumber(0);
+
+            //----------------------------Question6-----------------
+            // function isGrade(marks) {
+            //     if (marks < 0 || marks > 100) {
+            //         console.log('Invalid marks');
+            //     }
+            //     else if (marks > 80) {
+            //         console.log('Distinction');
+            //     }
+            //     else if (marks > 70 && marks <= 80) {
+            //         console.log('A');
+            //     }
+            //     else if (marks > 60 && marks <= 70) {
+            //         console.log('B');
+            //     }
+            //     else if (marks > 50 && marks <= 60) {
+            //         console.log('C');
+            //     }
+            //     else if (marks <= 50 && marks >= 35) {
+            //         console.log('D');
+            //     }
+            //     else if (marks < 35) {
+            //         console.log('Fail');
+            //     }
+            // }
+            // isGrade(35);
+            // isGrade(99);
+            // isGrade(26);
+            // isGrade(101);
+
+            //-------------------Question7---------------------
+            // function typeOfInput(input) {
+            //     if (typeof(input) === 'number') {
+            //         alert('Type is Number');
+            //     }
+            //     else if (typeof(input) === 'string') {
+            //         alert('Type is String');
+            //     }
+            //     else if (typeof(input) === 'undefined') {
+            //         alert('Type is Undefined');
+            //     }
+            //     else if (typeof(input) === 'null') {
+            //         alert('Type is Null');
+            //     }
+            //     else if (typeof(input) === 'boolean') {
+            //         alert('Type is Boolean');
+            //     }
+            // }
+            // let a;
+            // typeOfInput('ibhubs');
+            // typeOfInput(23);
+            // typeOfInput(true);
+            // typeOfInput(a);
+            //---------------------Question8----------------------
+            // function checkTheMultiplesOfNumber(value) {
+            //     if (value % 4 == 0 || value % 5 == 0) {
+            //         console.log('True');
+            //     }
+            //     else {
+            //         console.log('False');
+            //     }
+            // }
+            // checkTheMultiplesOfNumber(35);
+            // checkTheMultiplesOfNumber(0);
+            // checkTheMultiplesOfNumber(16);
+            // checkTheMultiplesOfNumber(13);
+            //-------------------------------Question9-------------------
+            // function isVowelOrConsonant(letter) {
+            //     let vowels = '^(a|e|i|o|u|A|E|I|O|U){1}$';
+            //     let outputOfAlphabet = isAlphabet(letter);
+            //     // alert(outputOfAlphabet != null);
+            //     if (outputOfAlphabet) {
+            //         let checkVowel = letter.match(vowels);
+            //         // alert(checkVowel);
+            //         if (checkVowel) {
+            //             console.log('Vowel');
+            //         }
+            //         else {
+            //             console.log('Consonant');
+            //         }
+            //     }
+            // }
+
+            // function isAlphabet(letter) {
+            //     let patternMatch = "^[a-zA-Z]{1}$";
+            //     let checkAlphabet = letter.match(patternMatch);
+            //     // alert(`here is the character output ${checkAlphabet}`);
+            //     return checkAlphabet;
+            // }
+            // isVowelOrConsonant('A');
+            // isVowelOrConsonant('harika');
+            //------------------------------Question10---------------------
+            // function isEven(value) {
+            //     (value % 2 == 0) ? console.log('Even'): console.log('Odd');
+            // }
+            // isEven(2);
+            // isEven(5);
+            // //-----------------Question11------------------
+
+            // function calculateGcd(value1, value2) {
+            //     if (!value2) {
+            //         return (value1);
+            //     }
+
+            //     return (calculateGcd(value2, value1 % value2));
+            // }
+            // console.log(calculateGcd(24, 60));
+            // console.log(calculateGcd(16, 88));
+
+            // //--------------------Question-12-----------------------
+            // function countNumberOfDigits(value) {
+            //     let count = 0;
+            //     let temp = value;
+            //     for (let i = 0; value != 0; i++) {
+            //         temp = value % 10;
+            //         count = count + 1;
+            //         value = parseInt(value / 10);
+            //     }
+            //     console.log(count);
+            // }
+            // countNumberOfDigits(1234);
+            // countNumberOfDigits(233);
+            // //------------------------Question13---------------------------
+            // function sumOfDigits(value) {
+            //     let sum = 0;
+            //     let temp = value;
+            //     for (let i = 0; value != 0; i++) {
+            //         temp = value % 10;
+            //         sum = sum + temp;
+            //         value = Math.floor(value / 10);
+            //     }
+            //     console.log('The sum is', sum);
+            // }
+            // sumOfDigits(1234);
+            // sumOfDigits(345);
+            // sumOfDigits(2460);
+            //------------------Question14------------------------
+            // function factorialOfNumber(value) {
+            //     let temp = 1;
+            //     for (let i = value; i > 0; i--) {
+            //         temp = temp * i;
+            //     }
+            //     console.log('factorial of a number', temp);
+            // }
+            // factorialOfNumber(5);
+            // factorialOfNumber(10);
+            // //------------------Question15---------------
+            // function isLeapYear(year) {
+            //     if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+            //         console.log(`Given year ${year} is a Leap Year`);
+            //     }
+            //     else {
+            //         console.log(`Given year ${year} is not a leap year`);
+            //     }
+            // }
+            // isLeapYear(2019);
+            // isLeapYear(2020);
+            // //------------------------Question16---------------
+            // function isPerfect(value) {
+            //     let factors = [];
+            //     let sum = 0;
+            //     for (let i = 0; i < value; i++) {
+            //         if (value % i == 0) {
+            //             factors.push(i);
+            //         }
+            //     }
+
+            //     for (let i = 0; i < factors.length; i++) {
+            //         sum = sum + factors[i];
+            //     }
+            //     if (value == sum) {
+            //         console.log('Perfect Number');
+            //     }
+            //     else {
+            //         console.log('Not perfect Number');
+            //     }
+            // }
+            // isPerfect(6);
+            // isPerfect(35);
+
+            // //-------------------Question17---------------
+            // function factorsOfANumber(value) {
+            //     let factors = [];
+            //     for (let i = 1; i <= value; i++) {
+            //         if (value % i == 0) {
+            //             factors.push(i);
+            //         }
+            //     }
+            //     console.log(`factors of a ${value} is`, factors);
+            // }
+            // factorsOfANumber(6);
+            // factorsOfANumber(40);
+            // //---------------------------Question18------------------
+            // function getSmallestNumberFromArray(array) {
+            //     let smallNumber = array[0];
+            //     for (let i = 1; i < array.length; i++) {
+            //         if (array[i] < smallNumber) {
+            //             smallNumber = array[i];
+            //         }
+            //     }
+            //     console.log(`The smallest number in the given array is`, smallNumber);
+            // }
+            // getSmallestNumberFromArray([2, 3, 4, 1, 6, 8]);
+            // getSmallestNumberFromArray([88, 11, 22, 33, 44, 55, 66, 0]);
+            // //---------------------------Question19----------------
+            // function getLargestNumberFromArray(array) {
+            //     let largeNumber = array[0];
+            //     for (let i = 1; i < array.length; i++) {
+            //         if (array[i] > largeNumber) {
+            //             largeNumber = array[i];
+            //         }
+            //     }
+            //     console.log(`The largest number in the given array is`, largeNumber);
+            // }
+            // getLargestNumberFromArray([2, 3, 4, 1, 6, 8]);
+            // getLargestNumberFromArray([88, 11, 22, 33, 44, 55, 66, 0]);
+            // //-------------------------------Question20------------------
+            // function sumOfElements(array) {
+            //     let sum = 0;
+            //     for (let i = 0; i < array.length; i++) {
+            //         sum = sum + array[i];
+            //     }
+            //     console.log('The sum of given array is', sum);
+            // }
+            // sumOfElements([12, 19, 2, 25, 9, 1]);
+            // sumOfElements([15, 88, 10, 20, 34]);
+            // //----------------------Question21------------------------
+            // function countNumberOfOddNumbers(array) {
+            //     let count = 0;
+            //     for (let i = 0; i < array.length; i++) {
+            //         if (array[i] % 2 != 0) {
+            //             count = count + 1;
+            //         }
+            //     }
+            //     console.log('The number of odd numbers in a given array is:', count);
+            // }
+            // countNumberOfOddNumbers([12, 19, 2, 25, 9, 1]);
+            // countNumberOfOddNumbers([15, 88, 10, 20, 34]);
+            // //--------------------Question22--------------------
+            // function countNumberOfEvenNumbers(array) {
+            //     let count = 0;
+            //     for (let i = 0; i < array.length; i++) {
+            //         if (array[i] % 2 == 0) {
+            //             count = count + 1;
+            //         }
+            //     }
+            //     console.log('The number of even numbers in a given array is:', count);
+            // }
+            // countNumberOfEvenNumbers([12, 19, 2, 25, 9, 1]);
+            // countNumberOfEvenNumbers([15, 88, 10, 20, 34]);
+            // //-----------------------Question 23-----------------------
+            // function isEmptyObject(object) {
+            //     if (Object.entries(object).length == 0) {
+            //         return ('true');
+            //     }
+            //     else {
+            //         return ('false');
+            //     }
+            // }
+            // console.log(isEmptyObject({}));
+            // console.log(isEmptyObject({ name: "John", age: 30 }));
+
+            // //-------------------------Question 24------------------------
+            // function displayPropertyWithValue(object) {
+            //     console.log(Object.entries(object));
+            // }
+            // displayPropertyWithValue({ John: "software", Ann: "hardware" });
+
+            // //--------------------Question 25--------------------
+            // function getAllPropertyNames(object) {
+            //     console.log(Object.keys(object));
+            // }
+            // getAllPropertyNames({ John: "software", Ann: "hardware" });
+            // getAllPropertyNames({ name: "John", age: 30 });
+            // //-----------------------Question 26---------------------
+            // function getArrayLength(array) {
+            //     console.log(array.length);
+            // }
+            // getArrayLength([1, "a", [2, "b"],
+            //     [3, "c"],
+            //     [4, "d"]
+            // ]);
+            // getArrayLength(([1, 2, 3, 4, 5, 7, 8]));
+            // getArrayLength([]);
+            // //----------------------Question 27--------------------------
+            // function addAnElement(array, value) {
+            //     array.push(value);
+            //     console.log(array);
+            // }
+            // addAnElement([1, 2, 3], 4);
+            // addAnElement(["a", "b", "c"], [23, 54]);
+
+            // //-----------------------Question28---------------
+            // function removeLastElementFromArray(array) {
+            //     console.log(array.pop());
+            // }
+            // removeLastElementFromArray(["a", "b", [23, 54, "c"]]);
+            // removeLastElementFromArray(["a", "b", "c"]);
+
+            // //------------------------Question 29------------------
+            // function removeElementsFromArray(array, startIndex, deleteCount) {
+            //     array.splice(startIndex, deleteCount);
+            //     console.log(array);
+            // }
+            // removeElementsFromArray(["a", "b", "c", "d", "e", "f"], 4, 4);
+            // removeElementsFromArray(["a", "b", 8, 19], 0, 4);
+
+            // //------------------------Question 30------------------
+            // function getSubArray(array, startIndex, endIndex) {
+            //     console.log(array.slice(startIndex, endIndex));
+            // }
+            // getSubArray(["a", "b", "c", "d", "e", "f"], 3, 6);
+            // //------------------------Question 31------------------
+            // let myArray = [1, 1.4, 2, 3, 122, ["a", "b", "f"], true, false, [0]];
+            // myArray.push(10); //1
+            // myArray.splice(0, 3); //2
+            // console.log('new...', myArray);
+            // // myArray.splice(0, 3, [0, 1, 2]); //3
+            // // console.log('new...', myArray);
+
+            // //------------------------Question 32------------------
+
+            // function addProperty(object, newKey, newValue) {
+            //     object[newKey] = newValue;
+            //     console.log(object);
+            // }
+            // addProperty({ a: "1", b: "2", c: "3" }, "d", "4");
+            // addProperty({ "one": 1, "two": 2, "three": 3 }, "twenty four", 24);
+            // //------------------------Question 33------------------
+
+            // function updateProperty(object, key, newValue) {
+            //     object[key] = newValue;
+            //     console.log(object);
+            // }
+            // updateProperty({ "one": 1, "two": 2, "three": 3 }, "one", 01);
+
+            // //------------------------Question 34------------------
+
+            // function deleteProperty(object, key) {
+            //     delete object[key];
+            //     console.log(object);
+            // }
+            // deleteProperty({ a: "1", b: "2", c: "3" }, "c");
+            // deleteProperty({ "one": 1, "two": 2, "three": 3 }, "one");
+
+            // //------------------------Question 35------------------
+
+            // function addObjectsToArray(array, arrayOfObjects) {
+            //     console.log(array.concat(arrayOfObjects));
+            //     //console.log(array);
+            // } 
+            // addObjectsToArray(["a", "b", "c"], [{ a: "1", b: "2", c: "3" }, { d: "4" }, { f: "6" }]);
+            // addObjectsToArray([1, 2, 3], [{ "one": 1 }, { "two": 2 }, { "three": 3 }]);
+            //------------------------Question 36------------------
+            // let user = {
+            //     name: 'Kenneth',
+            //     age: 28,
+            //     data: {
+            //         username: 'kennethCodesAllDay',
+            //         joinDate: 'March 26, 2016',
+            //         organization: 'facebook',
+            //         friends: ['Sam', 'Kira', 'Tomo'],
+            //         location: {
+            //             city: 'San Francisco',
+            //             state: 'CA',
+            //             country: 'USA'
+            //         }
+            //     }
+            // }
+
+            // function addProperty(user) {
+            //     user.data.friends.push('ram', 'john', 'weisly', 'Robin'); //36&37 
+            //     console.log(user);
+            // }
+            // addProperty(user);
+
+            //------------------------Question 38------------------
+
+            // let myObject = {
+            //     height: 43,
+            //     width: 22,
+            //     rectangle: [22, 33],
+            // }
+
+            // function addition(array) {
+            //     let sum = 0;
+            //     for (let i = 0; i < array.length; i++) {
+            //         sum = sum + array[i];
+            //     }
+            //     console.log(sum);
+            // }
+
+            // myObject.addition = addition;
+
+            // console.log(myObject);
+            // addition([23, 43, 54, 3, 5, 7, -34]);
+            // //console.log(myObject.addition.addition([23, 43, 54, 3, 5, 7, -34]));
+
+            //----------------------------------practise-------------------------
+
+
+            // let selectedColor = null;
+            // alert(typeof(selectedColor));//It returns the object...why??????
+
+            // try {
+            //     // const intrestRate = 0.64;
+            //     // intrestRate = 0.8;
+            //     const name;      //
+            //     name = "Ram";
+            //     console.log('try block intrestRate');
+
+            // }
+            // catch (e) {
+
+            //     console.log('catch block intrestRate');
+            // }
+            // alert("1" == 1)
+
+            //  alert("1" === 1);
+            // alert(1 !== 1)
+            // alert(null == undefined)
+            // alert(null === undefined)
+
+            // let myfunction = () => {
+            //     let headingObject = document.getElementById("demo");
+            //     headingObject.parentNode.removeChild(headingObject);
+
+            // }
+            document.getElementById("p2").style.color = 'blue';
+            document.getElementById("p2").style.fontSize = "30px";
+            document.getElementById("p2").style.fontStyle = 'Italic';
+        </script>
+
+        <!--<h1 id="demo">my page</h1>-->
+        <!--<button onclick="myfunction()">Submit</button>-->
+    </body>
+
+</html>

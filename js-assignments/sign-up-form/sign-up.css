@@ -1,0 +1,115 @@
+#outerColors {
+    padding-right: 10%;
+    padding-left: 10%;
+    border: 2px solid black;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+h1 {
+    color: black;
+    margin-bottom: 0px;
+}
+
+#validationForm {
+    border: 1px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    padding-bottom: 3%;
+    border-bottom: 1px solid lightgrey;
+}
+
+#validationStarts {
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#namesDiv {
+    display: flex;
+}
+
+#firstName,
+#lastName {
+    width: 280px;
+    height: 30px;
+    margin-left: 2px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+#mobileNumber,
+#email,
+#password,
+#confirmPassword {
+    width: 575px;
+    height: 30px;
+    border-radius: 0px;
+}
+
+#genderDiv {
+    display: flex;
+    margin-top: 2%;
+}
+
+#genderDiv>input {
+    margin-left: 13%;
+}
+
+#address {
+    width: 380px;
+    height: 40px;
+}
+
+#signUp {
+    align-self: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 3px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 15px;
+    padding: 2%;
+    text-align: center;
+}
+
+.color {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#branchDobDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    font-size: 14px;
+    color: red;
+}
+
+.spanPrivacy {
+    color: dodgerblue;
+}
+
+.alreadyAccount {
+    color: white;
+}
+
+.space {
+    margin-bottom: 3%;
+}

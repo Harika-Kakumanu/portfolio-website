@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: yellowgreen;
+
+                margin: 150px auto;
+
+                /*border-radius: 5px 50%;*/
+                transform-origin: left bottom;
+                transition: transform 3s;
+
+                /*transition-property: width;*/
+                /*transition-duration: 3s;*/
+                /*transition-delay: 2s;*/
+                /*transition-timing-function: linear;*/
+                /*Transition shorthand notation    */
+                /*transition:[property][duration][timing-function][delay];*/
+                /*transition: transform 1s;*/
+                /*transition: transform 1s;*/
+                /*shorthand notation for the transform*/
+                /*transform:[rotate][scale][translate][skew];*/
+            }
+
+            .active {
+                /*transform: scale(5, 5) rotate(180deg);*/
+                /*transform: skewY(-20deg);*/
+                /*transform: skewX(-20deg);*/
+                /*transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);*/
+                transform: rotate(500deg);
+                background-color: skyblue;
+            }
+
+            /*p {*/
+
+            /*    color: ;*/
+
+            /*}*/
+        </style>
+    </head>
+
+    <body>
+        <div id="changeWidth">
+
+        </div>
+        <script>
+            const transitionEl = document.getElementById('changeWidth');
+            document.ontouchstart = () => {
+                transitionEl.classList.add('active');
+            };
+            document.ontouchend = () => {
+                transitionEl.classList.remove('active');
+            };
+        </script>
+    </body>
+
+</html>

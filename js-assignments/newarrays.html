@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RGB App</title>
+    <link rel="stylesheet" href="rgb-app.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script>
+      // let array = [{ "name": "John", "age": 12, "phonenumber": 9999999999 },
+      //   { "name": "ram", "age": 16, "phonenumber": 8888888888 },
+      //   { "name": "ravi", "age": 18, "phonenumber": 77777777777 },
+      //   { "name": "rani", "age": 24, "phonenumber": 1234567789 },
+      //   { "name": "rohan", "age": 26, "phonenumber": 1234534589 }
+      // ]
+
+      //   // let results = (array.filter(printEligibleVoters));
+
+
+      // let results = (array.map(printEligibleVoters));   // here instead of "map" method we can keep filter but filter function didn't return the values it return the objects
+
+      // function printEligibleVoters(person) {
+      //   if (person.age >= 18) {
+      //     //alert(person.name);
+      //     //console.log(person.name);
+      //     return person.name;
+      //   }
+      // }
+      // console.log(results);
+
+
+
+
+      // let eligibleVoters = array.filter(isEligibleToVoteInIndia);
+
+
+      // function isEligibleToVoteInIndia(person) {
+      //   return person.age >= 18;
+      // }
+
+      // function isEligibleToVoteInUs(age) {
+      //   return age >= 16;
+      // }
+
+
+      // console.log(eligibleVoters.length);
+
+
+      // function countOfVoters(array, isEligible) {
+      //   return array.filter(isEligibleToVote())
+      // }
+
+      // function countOfVoters(array, isEligible) {
+      //   let count = 0;
+      //   for (let i = 0; i < array.length; i++) {
+      //     if (isEligible(array[i].age)) {
+      //       count = count + 1;
+      //     }
+      //   }
+      //   return count;
+      // }
+      // console.log('the count of the eligible voters are', (countOfVoters(array, isEligibleToVoteInIndia)))
+      // console.log('the count of the eligible voters are', (countOfVoters(array, isEligibleToVoteInUs)))
+
+
+
+      // let ages = [10, 33, 16, 55];
+
+      // function isEligibleToVote(age) {
+      //   return age >= 18;
+      // }
+      // let eligibleVoters = ages.filter(isEligibleToVote);
+      // console.log(eligibleVoters);
+
+
+
+      //let input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //let results = input.filter(onlyOddNumbers);
+      // function onlyOddNumbers(number) {
+      //   return number % 2 === 1;
+      // }
+      // console.log(results);
+      // alert(input.filter(number => number % 2 === 1));//single line code using filter
+
+
+      //--------------------------for each------------------------------
+
+      // let ages = [32, 33, 16, 40];
+      // ages.forEach(getAge);
+      // function getAge(age) {
+      //   alert(age);
+      // }
+
+
+      // let numbers = [65, 44, 12, 4];
+      // numbers.forEach(myFunction);
+
+      // function myFunction(item, index, arr) {
+      //   arr[index] = item * 5;
+      // }
+      // alert(numbers);
+
+      //-----------------------------map---------------------
+
+      // let ages = [32, 33, 16, 40];
+
+      // function incrementAgeBy2(age) {
+      //   return (age = age + 2);
+      // }
+      // let newAges = ages.map(incrementAgeBy2);
+      // alert(newAges);
+
+
+      // let array = [3, 5, 6, 7, 8];
+      // console.log(array.map(number => number * 2));
+      //-----------------------------find--------------------
+      // let ages = [20, 33, 16, 40];
+
+      // function checkAge(age) {
+      //   return age > 20;
+      // }
+      // let age = ages.find(checkAge); //it returns the at the first occurence of the array, next elements didn't execute
+      // alert(age);
+
+      // let input = [{ id: 1, name: "john" }, { id: 2, name: "pete" }, { id: 3, name: "Mary" }];
+      // let name = (input.find(name => name.name === "john"))
+      // console.log(name.id);
+
+
+      //-----------------------------------------------
+      // let cat = 'Miaow';
+      // let dog = 'woof';
+      // let animals = {
+      //   cat,
+      //   dog
+      // }
+      // console.log(animals.cat);
+
+      //-----------------object destructing----------------
+      // let car = {
+      //   color: 'silver',
+      //   brand: 'tata',
+      // };
+      // let { color } = car;
+      // alert(color);
+
+
+      //  -----------------rest operator------------
+      // const teams = {
+      //   blue: 'Blue',
+      //   green: "GReen",
+      //   orange: "Orange",
+      //   white: "White",
+      // }
+      // const { white, ...bgoTeams } = teams;
+      // console.log(bgoTeams);
+
+
+
+      // function sumOfNumbers(...args) {
+      //   let sum = 0;
+      //   for (let arg of args) {
+      //     sum += arg;
+      //   }
+      //   //alert(typeof(args));
+      //   return sum
+      // }
+
+
+
+      // function sumOfNumbers(firstArgument, ...args) {  //it leaves the first parameter and excutes the rest of the numbers
+      //   let sum = 0;
+      //   for (let arg of args) {
+      //     sum += arg;
+      //   }
+      //   //alert(typeof(args));
+      //   return sum
+      // } 
+
+
+      // function sumOfNumbers(firstArgument, ...args,lastArgument) {    // it returns the error bcoz we can't have argument names after the rest operator
+      //   let sum = 0;
+      //   for (let arg of args) {
+      //     sum += arg;
+      //   }
+      //   //alert(typeof(args));
+      //   return sum
+      // }
+      // console.log(sumOfNumbers(1, 2, 3, 4, 5));
+
+      //------------------how to join two arrays---------------------
+      // const first = [1, 2, 3, 4];
+      // const second = [5, 6, 7, 8];
+      //const combined = first.concat(second);//using concat method
+      // console.log(combined);
+
+      //const combined = [...first, ...second]; //using spread operator look like the rest operator
+      // console.log(combined);
+
+      // const combined = [...first, "a", ...second, "b"];
+      // console.log(combined);
+
+      // function sumOfNumbers(...args) {
+      //   let sum = 0;
+      //   for (let arg of args) {
+      //     sum += arg;
+      //   }
+      //   return sum;
+      // }
+      // const numbers = [1, 2, 3, 4, 5];
+      // console.log(sumOfNumbers(...numbers));
+
+      // const name = "ibhubs";
+      // const letters = [...name];
+      // console.log(letters);
+    </script>
+  </body>
+
+</html>
